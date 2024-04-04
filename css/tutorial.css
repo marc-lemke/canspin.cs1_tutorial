@@ -1,0 +1,39 @@
+/* Farben */
+.farbe-ort {
+  background-color: #b6d3ff;
+  color: #000000;
+}
+.farbe-bewegung {
+  background-color: #b60000;
+  color: #000000;
+}
+.farbe-dimensionierung {
+  background-color: #8ab6ad;
+  color: #000000;
+}
+.farbe-positionierung {
+  background-color: #db8300;
+  color: #000000;
+}
+.farbe-richtung {
+  background-color: #92ffbd;
+  color: #000000;
+}
+.active {
+  background-color: #009688;
+}
+
+/* Größen und Abstände */
+h2 {
+  margin-top: 32px;
+}
+.content {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  max-width: 700px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+#beispieltextBtns > div {
+  margin: 4px;
+}

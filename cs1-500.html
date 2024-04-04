@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>CANSpiN.CS1 5.0.0 Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.json">
+  <link rel='stylesheet' href='css/w3.css'>
+  <link rel='stylesheet' href='css/font-awesome.min.css'> 
+  <link rel='stylesheet' href='css/tutorial.css'>
+</head>
+<body class='w3-animate-opacity'>
+  <header class='w3-display-container w3-black w3-center w3-padding-32'>
+    <h1>CANSpiN.CS1 5.0.0 Tutorial</h1>
+    <div id='languageSelector' class='w3-display-bottomright w3-margin-top'>
+      <div class='w3-bar w3-margin-right'>
+        <button class='w3-button w3-tiny w3-hover-teal active'>deutsch</button>
+        <button class='w3-button w3-tiny w3-disabled' disabled>english</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id='categories' class='w3-container w3-light-grey w3-center'>
+      <h2>Kategorien</h2>
+      <div class='content'>
+        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-ort'>
+          <div class='w3-container'>
+            <h3>Ort<i class='fa fa-map-marker w3-margin-left' aria-hidden='true'></i></h3>
+          </div>
+          <div class='w3-container'>
+          </div>
+        </div>
+        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-bewegung'>
+          <div class='w3-container'>
+            <h3>Bewegung<i class='fa fa-long-arrow-right w3-margin-left' aria-hidden='true'></i></h3>
+          </div>
+          <div class='w3-container'>
+          </div>
+        </div>
+        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-dimensionierung'>
+          <div class='w3-container'>
+            <h3>Dimensionierung<i class='fa fa-arrows w3-margin-left' aria-hidden='true'></i></h3>
+          </div>
+          <div class='w3-container'>
+          </div>
+        </div>
+        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-positionierung'>
+          <div class='w3-container'>
+            <h3>Positionierung<i class='fa fa-clone w3-margin-left' aria-hidden='true'></i></h3>
+          </div>
+          <div class='w3-container'>
+          </div>
+        </div>
+        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-richtung'>
+          <div class='w3-container'>
+            <h3>Richtung<i class='fa fa-hand-o-right w3-margin-left' aria-hidden='true'></i></h3>
+          </div>
+          <div class='w3-container'>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='example' class='w3-container w3-green w3-center'>
+      <h2>Beispieltext</h2>
+      <div class='content'>
+        <div id='beispieltextBtns' class='w3-bar w3-center'>
+          <div id='beispieltextBtns_ort' class='w3-button w3-round w3-grey'>Ort</div>
+          <div id='beispieltextBtns_bewegung' class='w3-button w3-round w3-grey'>Bewegung</div>
+          <div id='beispieltextBtns_dimensionierung' class='w3-button w3-round w3-grey'>Dimensionierung</div>
+          <div id='beispieltextBtns_positionierung' class='w3-button w3-round w3-grey'>Positionierung</div>
+          <div id='beispieltextBtns_richtung' class='w3-button w3-round w3-grey'>Richtung</div>
+        </div>
+        <blockquote class='w3-panel w3-leftbar w3-pale-green'>
+          <p class='w3-large w3-left-align'>Am nächsten Morgen schrieb Laura mit großen steifen Buchstaben Name und Wohnung des Herrn Hahn auf einen Briefumschlag, siegelte diesen mit einem Veilchen, welches die Umschrift trug: »ich verberge mich,« und steckte die Adresse in ihre Tasche. Als sie wegen eines Einkaufs nach der Stadt ging, machte sie auf eigene Gefahr einen Seitenweg zu einem Handelsgärtner, mit dem sie persönlich nicht bekannt war. Dort kaufte sie den dicken Busch einer Zwergorange voll von Blüthen und goldenen Früchten, ein Prachtstück des Glashauses, sie fuhr den Strauch mit pochendem Herzen in geschlossener Droschke, bis sie einen Lohnträger fand, und empfahl mit einer außerordentlichen Vergütigung dem Träger, Strauch und Brief ohne Gruß und Wort im Hause des Herrn Hahn niederzusetzen.</p>
+          <p class='w3-left-align'>Gustav Freytag: Die verlorene Handschrift. ELTeC-Ausgabe. In: Leonard Konle, Fotis Jannidis, Carolin Odebrecht und Lou Burnard (2021): German Novel Corpus (ELTeC-deu). April 2021 release (v.1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.4662482.</p>
+        </blockquote> 
+      </div>
+    </div>
+  </main>
+  <footer class='w3-container w3-teal w3-center'>
+    <p>Gebaut mit <a href='https://www.w3schools.com/w3css/w3css_downloads.asp'>W3.CSS 4.15</a>, <a href='https://fontawesome.com/v4/icons/'>Font Awesome 4.7.0</a> und <a href='https://www.favicon-generator.org/'>Favicon.ico & App Icon Generator</a>.</p>
+  </footer>
+  <script src='script/tutorial.js'></script>
+</body>
+</html>
