@@ -1,3 +1,5 @@
+const currentCS1version = '0.5.0';
+
 function addEventListener_beispieltextBtns() {
   let btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
   if (btnsList.length === 5) {
@@ -29,5 +31,15 @@ function addEventListener_mediaQueries() {
   });
 }
 
+function addEventListener_insertValuesOnLoad() {
+  window.addEventListener('load', function(e) {
+    // current cs1 version
+    const headerTitleElement = document.querySelector('header > h1');
+    const currentCS1versionText = `CANSpiN.CS1 ${currentCS1version} Tutorial`;
+    document.title = headerTitleElement.textContent = currentCS1versionText;
+  });
+}
+
 addEventListener_mediaQueries();
 addEventListener_beispieltextBtns();
+addEventListener_insertValuesOnLoad();
