@@ -6,11 +6,7 @@ function addEventListener_accordions() {
   for (const accordion of accordionList) {
     accordion.addEventListener('click', function(e) {
       const panel = this.children[1];
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
+      panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + 'px';
     });
   }
 }
@@ -32,7 +28,7 @@ function addEventListener_beispieltextBtns() {
 
 function addEventListener_mediaQueries() {
   function _executeMediaQueries() {
-    const currentWidth = Math.max(document.documentElement["clientWidth"], document.body["scrollWidth"], document.documentElement["scrollWidth"], document.body["offsetWidth"], document.documentElement["offsetWidth"]);
+    const currentWidth = Math.max(document.documentElement['clientWidth'], document.body['scrollWidth'], document.documentElement['scrollWidth'], document.body['offsetWidth'], document.documentElement['offsetWidth']);
     const languageSelectorElement = document.getElementById('languageSelector')
 
     if (currentWidth > 900) {
