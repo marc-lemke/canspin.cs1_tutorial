@@ -37,3 +37,14 @@ h2 {
 #beispieltextBtns > div {
   margin: 4px;
 }
+
+/* Accordion */
+.accordion {
+  transition: 0.4s;
+}
+.accordion-panel {
+  white-space: wrap !important;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

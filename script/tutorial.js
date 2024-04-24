@@ -1,7 +1,23 @@
 const currentCS1version = '0.5.0';
 
+function addEventListener_accordions() {
+  const accordionList = document.getElementsByClassName("accordion");
+
+  for (const accordion of accordionList) {
+    accordion.addEventListener('click', function(e) {
+      const panel = this.children[1];
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+}
+
 function addEventListener_beispieltextBtns() {
-  let btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
+  const btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
+  
   if (btnsList.length === 5) {
     for (const btn of btnsList) {
       btn.addEventListener('click', function(e) {
@@ -41,5 +57,6 @@ function addEventListener_insertValuesOnLoad() {
 }
 
 addEventListener_mediaQueries();
+addEventListener_accordions();
 addEventListener_beispieltextBtns();
 addEventListener_insertValuesOnLoad();
