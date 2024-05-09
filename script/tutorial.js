@@ -14,15 +14,20 @@ function addEventListener_accordions() {
 function addEventListener_beispieltextBtns() {
   const btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
   
-  if (btnsList.length === 5) {
-    for (const btn of btnsList) {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const colorClass = 'farbe-' + e.currentTarget.id.split('_')[1];
-        e.currentTarget.classList.toggle('w3-grey');
-        e.currentTarget.classList.toggle(colorClass);
-      });
-    }
+  for (const btn of btnsList) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const category = e.currentTarget.id.split('_')[1];
+      const colorClass = 'farbe-' + category;
+      
+      e.currentTarget.classList.toggle('w3-white');
+      e.currentTarget.classList.toggle(colorClass);
+
+      const spanList = [...document.querySelectorAll(`[class^=${category}]`)];
+      for (const span of spanList) {
+        span.classList.toggle(colorClass);
+      }
+    });
   }
 }
 

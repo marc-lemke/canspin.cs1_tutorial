@@ -22,6 +22,21 @@
 .active {
   background-color: #009688;
 }
+#beispieltextBtns_ort:hover {
+  background-color: #b6d3ff !important;
+}
+#beispieltextBtns_bewegung:hover {
+  background-color: #b60000 !important;
+}
+#beispieltextBtns_dimensionierung:hover {
+  background-color: #8ab6ad !important;
+}
+#beispieltextBtns_positionierung:hover {
+  background-color: #db8300 !important;
+}
+#beispieltextBtns_richtung:hover {
+  background-color: #92ffbd !important;
+}
 
 /* Größen und Abstände */
 h2 {
@@ -37,6 +52,14 @@ h2 {
 #beispieltextBtns > div {
   margin: 4px;
 }
+#example > div > blockquote > p > span.farbe-ort,
+#example > div > blockquote > p > span.farbe-bewegung,
+#example > div > blockquote > p > span.farbe-dimensionierung,
+#example > div > blockquote > p > span.farbe-positionierung,
+#example > div > blockquote > p > span.farbe-richtung {
+  cursor: pointer;
+  padding: 4px;
+}
 
 /* Accordion */
 .accordion {
@@ -47,4 +70,9 @@ h2 {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+/* Zeilenumbruch */
+.break-word {
+  overflow-wrap: break-word;
 }
