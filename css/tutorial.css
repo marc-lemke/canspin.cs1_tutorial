@@ -52,6 +52,9 @@ h2 {
 #beispieltextBtns > div {
   margin: 4px;
 }
+#beispieltextText > :nth-child(1) {
+  line-height: 2.3em;
+}
 #example > div > blockquote > p > span.farbe-ort,
 #example > div > blockquote > p > span.farbe-bewegung,
 #example > div > blockquote > p > span.farbe-dimensionierung,
