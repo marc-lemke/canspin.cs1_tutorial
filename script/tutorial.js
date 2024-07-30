@@ -1,4 +1,4 @@
-const currentCS1version = '0.5.0';
+const currentCS1version = '1.0.0';
 
 function addEventListener_accordions() {
   const accordionList = document.getElementsByClassName("accordion");
