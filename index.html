@@ -44,7 +44,44 @@
             <h3>Ort<i class='fa fa-map-marker w3-margin-left' aria-hidden='true'></i></h3>
           </div>
           <div class='w3-container accordion-panel'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>Annotationsklassen</h4>
+            <ul>
+              <li>ORT-CONTAINER</li>
+              <li>ORT-CONTAINER-BK</li>
+              <li>ORT-OBJEKT</li>
+              <li>ORT-OBJEKT-BK</li>
+              <li>ORT-ABSTRAKT</li>
+              <li>ORT-ABSTRAKT-BK</li>
+            </ul>
+            <h4>Orte Erkennen und zu einer Annotationsklasse zuordnen</h4>
+            <ul>
+              <li>Container: Bereiche und Räume, in denen sich Figuren aufhalten können</li>
+              <ul>
+                <li><i>Zimmer</i></li>
+                <li><i>Köln</i></li>
+                <li><i>Busch</i></li>
+              </ul>
+              <b>&rarr; </b><b>ORT-CONTAINER</b>
+              <li>geographische, astronomische oder raumstrukturelle Objekte und Punkte: Dinge und Punkte, die auf Karten auftauchen oder Räume begrenzen, sowie abstraktes Raumbeschreibungsvokabular</li>
+              <ul>
+                <li><i>Statue</i></li>
+                <li><i>Mond</i></li>
+                <li><i>Tür</i></li>
+                <li><i>Decke</i></li>
+                <li><i>Fenster</i></li>
+                <li><i>Nordpol</i></li>
+                <li><i>Mitte</i></li>
+                <li><i>Stelle</i></li>
+              </ul>
+              <b>&rarr; </b><b>ORT-OBJEKT</b>, <b>ORT-ABSTRAKT</b>
+              <li>unbewegte Container, Objekte und Punkte, die in einem Bewegungskontext stehen, also Ausgangs- und Zielpunkt einer Bewegung oder Wahrnehmung sind</li>
+              <ul>
+                <li>Er schaute ins <i>Zimmer</i>.</li>
+                <li>Sie verließ die <i>Mitte</i> des Raums.</li>
+                <li>Du bist in Richtung der <i>Tür</i> gelaufen.</li>
+              </ul>
+              <b>&rarr; </b><b>ORT-CONTAINER-BK</b>, <b>ORT-OBJEKT-BK</b>, <b>ORT-ABSTRAKT-BK</b>
+            </ul>
           </div>
         </div>
         <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-bewegung accordion'>
@@ -91,8 +128,8 @@
           <div id='beispieltextBtns_positionierung' class='w3-button w3-round w3-white'>Positionierung</div>
           <div id='beispieltextBtns_richtung' class='w3-button w3-round w3-white'>Richtung</div>
         </div>
-        <blockquote class='w3-panel w3-leftbar w3-white'>
-          <p class='w3-large w3-left-align'>Am nächsten Morgen <span class="bewegung-subjekt">schrieb</span> Laura mit großen steifen Buchstaben Name und Wohnung des Herrn Hahn auf einen <span class="ort-container">Briefumschlag</span>, <span class="bewegung-subjekt">siegelte</span> diesen mit einem Veilchen, welches die Umschrift trug: »ich verberge mich,« und <span class="bewegung-subjekt">steckte</span> die Adresse in ihre <span class="ort-container">Tasche</span>. Als sie wegen eines Einkaufs nach der <span class="ort-container">Stadt</span> <span class="bewegung-subjekt">ging</span>, machte sie auf eigene Gefahr einen Seitenweg zu einem Handelsgärtner, mit dem sie persönlich nicht bekannt war. Dort kaufte sie den dicken Busch einer Zwergorange voll von Blüthen und goldenen Früchten, ein Prachtstück des Glashauses, sie <span class="bewegung-subjekt">fuhr</span> den Strauch mit pochendem Herzen in <span class="bewegung-subjekt">geschlossener</span> <span class="ort-container">Droschke</span>, bis sie einen Lohnträger <span class="bewegung-subjekt">fand</span>, und <span class="bewegung-schall">empfahl</span> mit einer außerordentlichen Vergütigung dem <span class="ort-container">Träger</span>, Strauch und Brief ohne Gruß und Wort im <span class="ort-container">Hause</span> des Herrn Hahn <span class="bewegung-subjekt">niederzusetzen</span>.</p>
+        <blockquote id='beispieltextText' class='w3-panel w3-leftbar w3-white'>
+          <p class='w3-large w3-left-align'>Am nächsten Morgen <span class="bewegung-subjekt">schrieb</span> Laura mit <span class="dimensionierung-groesse">großen</span> steifen Buchstaben Name und Wohnung des Herrn Hahn <span class="richtung">auf</span> einen <span class="ort-objekt-bk">Briefumschlag</span>, <span class="bewegung-subjekt">siegelte</span> diesen mit einem Veilchen, welches die Umschrift trug: »ich verberge mich,« und <span class="bewegung-subjekt">steckte</span> die Adresse <span class="richtung">in</span> ihre <span class="ort-objekt-bk">Tasche</span>. Als sie wegen eines Einkaufs <span class="richtung">nach</span> der <span class="ort-container-bk">Stadt</span> <span class="bewegung-subjekt">ging</span>, machte sie auf eigene Gefahr einen Seitenweg <span class="richtung">zu</span> einem Handelsgärtner, mit dem sie persönlich nicht bekannt war. <span class="positionierung">Dort</span> kaufte sie den <span class="dimensionierung-groesse">dicken</span> Busch einer Zwergorange voll von Blüthen und goldenen Früchten, ein Prachtstück des Glashauses, sie <span class="bewegung-subjekt">fuhr</span> den Strauch mit pochendem Herzen <span class="positionierung">in</span> <span class="bewegung-subjekt">geschlossener</span> <span class="ort-container">Droschke</span>, bis sie einen Lohnträger <span class="bewegung-subjekt">fand</span>, und <span class="bewegung-schall">empfahl</span> mit einer außerordentlichen Vergütigung dem <span class="ort-objekt-bk">Träger</span>, Strauch und Brief ohne Gruß und Wort im <span class="ort-container">Hause</span> des Herrn Hahn <span class="bewegung-subjekt">niederzusetzen</span>.</p>
           <p class='w3-left-align break-word'>Gustav Freytag: Die verlorene Handschrift [1864]. ELTeC-Ausgabe. In: Leonard Konle, Fotis Jannidis, Carolin Odebrecht und Lou Burnard (2021): German Novel Corpus (ELTeC-deu). April 2021 release (v.1.0.0) [Data set]. Zenodo. <a href="https://doi.org/10.5281/zenodo.4662482" target="_blank">https://doi.org/10.5281/zenodo.4662482</a>.</p>
         </blockquote> 
       </div>
