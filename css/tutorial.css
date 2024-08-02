@@ -74,8 +74,28 @@ h2 {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+#accordion-ort-examples {
+  background-color: #d3e4fe;
+  color: #000000;
+  border-left: 6px solid #b782e3;
+}
+.annotation-class-tags {
+  line-height: 2.3em; 
+}
+.annotation-class-tags > .w3-tag {
+  margin-bottom: 4px;
+}
 
 /* Zeilenumbruch */
 .break-word {
   overflow-wrap: break-word;
+}
+
+/* Tooltips */
+.w3-tooltip > span.w3-text {
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  min-width: 100px;
+  border: 2px solid black;
 }

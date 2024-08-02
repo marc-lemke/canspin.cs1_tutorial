@@ -41,19 +41,26 @@
       <div class='content'>
         <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-ort accordion'>
           <div class='w3-container'>
+            <!-- mechanik einbauen: nach öffnen erscheint ein einklapp-pfeil rechts neben der h3-überschrift und das accordion schließt nun nur noch durch klick auf diesen pfeil; card in w3-card-4 ändern -->
             <h3>Ort<i class='fa fa-map-marker w3-margin-left' aria-hidden='true'></i></h3>
           </div>
           <div class='w3-container accordion-panel'>
+            <div id='accordion-ort-examples' class='w3-padding-32 w3-margin-top w3-panel'>
+              <p>Sie saß in ihrem <span class='w3-tooltip w3-tag'>Zimmer<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>Container für Figuren</span></span> in <span class='w3-tooltip w3-tag'>Köln<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografischer Container für Figuren</span></span>.</p>
+              <p>Plötzlich merkte er, dass er schon wieder an der <span class='w3-tooltip w3-tag'>Schiller-Statue<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografisches Objekt</span></span> vorbeilief.</p>
+              <p>Für den Moment schien es so, als ob die <span class='w3-tooltip w3-tag'>Fenster<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> und <span class='w3-tooltip w3-tag'>Türen<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> fest verschlossen wären.</p>
+              <p>In der <span class='w3-tooltip w3-tag'>Mitte<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>abstrakter räumlicher Punkt</span></span> des Tischs lag das verschollene Buch.</p>
+            </div>
             <h4>Annotationsklassen</h4>
-            <ul>
-              <li>ORT-CONTAINER</li>
-              <li>ORT-CONTAINER-BK</li>
-              <li>ORT-OBJEKT</li>
-              <li>ORT-OBJEKT-BK</li>
-              <li>ORT-ABSTRAKT</li>
-              <li>ORT-ABSTRAKT-BK</li>
-            </ul>
-            <h4>Orte Erkennen und zu einer Annotationsklasse zuordnen</h4>
+            <p class='annotation-class-tags'>
+              <span class='w3-tag w3-round w3-blue'>ORT-CONTAINER</span>
+              <span class='w3-tag w3-round w3-blue'>ORT-CONTAINER-BK</span>
+              <span class='w3-tag w3-round w3-blue'>ORT-OBJEKT</span>
+              <span class='w3-tag w3-round w3-blue'>ORT-OBJEKT-BK</span>
+              <span class='w3-tag w3-round w3-blue'>ORT-ABSTRAKT</span>
+              <span class='w3-tag w3-round w3-blue'>ORT-ABSTRAKT-BK</span>
+            </p>
+            <h4>Annotieren</h4>
             <ul>
               <li>Container: Bereiche und Räume, in denen sich Figuren aufhalten können</li>
               <ul>
