@@ -5,7 +5,7 @@
 }
 .farbe-bewegung {
   background-color: #b60000;
-  color: #000000;
+  color: #ffffff;
 }
 .farbe-dimensionierung {
   background-color: #8ab6ad;
@@ -87,7 +87,14 @@ h2 {
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-ort-examples > p > .w3-tooltip {
+#accordion-bewegung-examples {
+  background-color: #fef3d3;
+  color: #000000;
+  border-left: 6px solid #ec8484;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#accordion-ort-examples, #accordion-bewegung-examples > p > .w3-tooltip {
   cursor: help;
 }
 .annotation-class-tags {
@@ -96,6 +103,10 @@ h2 {
 .annotation-class-tags > .w3-tag {
   margin-bottom: 4px;
   cursor: pointer;
+}
+.active-class-tag {
+  border: 1px solid black;
+  cursor: default!important;
 }
 .close-accordion-chevron {
   position: relative;

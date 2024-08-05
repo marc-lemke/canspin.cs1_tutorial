@@ -2,7 +2,6 @@ const currentCS1version = '1.0.0';
 
 function addEventListener_accordions() {
   const accordionList = document.getElementsByClassName("accordion");
-
   for (const accordion of accordionList) {
     accordion.addEventListener('click', function openAccordion(e) {
       // open accordion
@@ -22,11 +21,18 @@ function addEventListener_accordions() {
         this.removeEventListener('click', closeAccordion);
         const accordion = this.parentElement.parentElement;
         accordion.addEventListener('click', openAccordion);
-        // reset annotation class tags css
+        // reset annotation class tags css and annotation class infos css
         const annotationClassTags = accordion.querySelector('.annotation-class-tags').children;
         for (const tag of annotationClassTags) {
-          tag.classList.remove('w3-border', 'w3-border-black');
-          tag.style.cursor = '';
+          tag.classList.remove('active-class-tag');
+        }
+        const annotationClassInfos = [...accordion.querySelector('.annotation-class-infos').children];
+        for (const [annotationInfoIndex, annotationInfo] of annotationClassInfos.entries()) {
+          if (annotationInfoIndex === 0) {
+            annotationInfo.classList.remove('w3-hide');
+          } else {
+            annotationInfo.classList.add('w3-hide');
+          }
         }
         // close accordion
         const panel = this.parentElement.nextElementSibling;
@@ -37,25 +43,41 @@ function addEventListener_accordions() {
         accordion.style.cursor = '';
       });
       // add eventlistener for annotation class tags
-      const annotationClassTags = this.querySelector('.annotation-class-tags').children;
-      for (const tag of annotationClassTags) {
-        tag.addEventListener('click', function getTagInfo(e) {
-          this.classList.add('w3-border', 'w3-border-black');
-          this.style.cursor = 'default';
-          // todo: add check, whether another tag button is active (change current classlist command to one that uses just an 'active' class, which controls border and cursor settings)
-        });
+      addEventListener_annotationClassInfos(this);
+    });
+  }
+}
+
+function addEventListener_annotationClassInfos(_this) {
+  const annotationClassTags = [..._this.querySelector('.annotation-class-tags').children];
+  for (const [tagIndex, tag] of annotationClassTags.entries()) {
+    tag.addEventListener('click', function getTagInfo(e) {
+      // do something after clicking on a tag only when the tag clicked is not the already activated one
+      if (!(tag.classList.contains('active-class-tag'))) {
+        // remove activate-class-tag class from any tag
+        for (const _tag of annotationClassTags) {
+          _tag.classList.remove('active-class-tag');
+        }
+        // add activate-class-tag class to tag currently clicked on
+        this.classList.add('active-class-tag');
+        // set display of info div corresponding to the tag currently clicked on ...
+        const annotationClassInfos = [...this.parentElement.parentElement.querySelector('.annotation-class-infos').children];
+        // ... by hiding all classInfo divs ...
+        for (const [classInfoIndex, classInfo] of annotationClassInfos.entries()) {
+          classInfo.classList.add('w3-hide');
+        }
+        // ... and displaying the classInfo div corresponding to the tag currently clicked on; the order of tag elements equals the order of classInfo elements in DOM, beside the fact, that there is an additional placeholer element on index 0 in the classInfo element list
+        annotationClassInfos[tagIndex + 1].classList.remove('w3-hide');
+        // refresh panel height
+        const panel = this.parentElement.parentElement;
+        panel.style.maxHeight = panel.scrollHeight + 'px';
       }
     });
   }
 }
 
-function addEventListener_annotationClassInfos() {
-
-}
-
 function addEventListener_beispieltextBtns() {
   const btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
-  
   for (const btn of btnsList) {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
@@ -65,7 +87,7 @@ function addEventListener_beispieltextBtns() {
       e.currentTarget.classList.toggle('w3-white');
       e.currentTarget.classList.toggle(colorClass);
 
-      const spanList = [...document.querySelectorAll(`[class^=${category}]`)];
+      const spanList = [...document.querySelectorAll(`#beispieltextText > p > [class^=${category}]`)];
       for (const span of spanList) {
         span.classList.toggle(colorClass);
       }
