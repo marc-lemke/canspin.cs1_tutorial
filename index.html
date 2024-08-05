@@ -41,11 +41,13 @@
       <div class='content'>
         <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-ort accordion'>
           <div class='w3-container'>
-            <!-- mechanik einbauen: nach öffnen erscheint ein einklapp-pfeil rechts neben der h3-überschrift und das accordion schließt nun nur noch durch klick auf diesen pfeil; card in w3-card-4 ändern -->
             <h3>Ort<i class='fa fa-map-marker w3-margin-left' aria-hidden='true'></i></h3>
+            <div class='close-accordion-chevron'>
+              <p><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
+            </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-ort-examples' class='w3-padding-32 w3-margin-top w3-panel'>
+            <div id='accordion-ort-examples' class='w3-panel w3-padding-32'>
               <p>Sie saß in ihrem <span class='w3-tooltip w3-tag'>Zimmer<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>Container für Figuren</span></span> in <span class='w3-tooltip w3-tag'>Köln<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografischer Container für Figuren</span></span>.</p>
               <p>Plötzlich merkte er, dass er schon wieder an der <span class='w3-tooltip w3-tag'>Schiller-Statue<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografisches Objekt</span></span> vorbeilief.</p>
               <p>Für den Moment schien es so, als ob die <span class='w3-tooltip w3-tag'>Fenster<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> und <span class='w3-tooltip w3-tag'>Türen<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> fest verschlossen wären.</p>
@@ -59,8 +61,24 @@
               <span class='w3-tag w3-round w3-blue'>ORT-OBJEKT-BK</span>
               <span class='w3-tag w3-round w3-blue'>ORT-ABSTRAKT</span>
               <span class='w3-tag w3-round w3-blue'>ORT-ABSTRAKT-BK</span>
+              <span class='w3-tag w3-round w3-light-blue'>ORT-UE-RX</span>
+              <span class='w3-tag w3-round w3-light-blue'>ORT-UE-XR</span>
+              <span class='w3-tag w3-round w3-light-blue'>ORT-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='annotation-class-infos'>
+              <div class='placeholder'><p class='w3-text-blue-grey'>Wähle eine Annotationsklasse aus...</p></div>
+              <div id='ort-container-info w3-hide'></div>
+              <div id='ort-container-bk-info w3-hide'></div>
+              <div id='ort-objekt-info w3-hide'></div>
+              <div id='ort-objekt-bk-info w3-hide'></div>
+              <div id='ort-abstrakt-info w3-hide'></div>
+              <div id='ort-abstrakt-bk-info w3-hide'></div>
+              <div id='ort-ue-rx-info w3-hide'></div>
+              <div id='ort-ue-xr-info w3-hide'></div>
+              <div id='ort-ue-rr-info w3-hide'></div>
+            </div>
+            <!--
             <ul>
               <li>Container: Bereiche und Räume, in denen sich Figuren aufhalten können</li>
               <ul>
@@ -89,6 +107,7 @@
               </ul>
               <b>&rarr; </b><b>ORT-CONTAINER-BK</b>, <b>ORT-OBJEKT-BK</b>, <b>ORT-ABSTRAKT-BK</b>
             </ul>
+            -->
           </div>
         </div>
         <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-bewegung accordion'>

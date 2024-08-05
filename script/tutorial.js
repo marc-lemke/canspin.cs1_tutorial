@@ -4,11 +4,53 @@ function addEventListener_accordions() {
   const accordionList = document.getElementsByClassName("accordion");
 
   for (const accordion of accordionList) {
-    accordion.addEventListener('click', function(e) {
+    accordion.addEventListener('click', function openAccordion(e) {
+      // open accordion
       const panel = this.children[1];
-      panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + 'px';
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      // deactivate pointer
+      this.style.cursor = 'default';
+      // show closeChevronDiv
+      const closeChevronDiv = this.children[0].querySelector('.close-accordion-chevron');
+      closeChevronDiv.style.display = 'block';
+      // change eventlistener attachment
+      this.removeEventListener('click', openAccordion);
+      closeChevronDiv.addEventListener('click', function closeAccordion(e) {
+        // prevent activating openAccordion function after clicking closeChevronDiv
+        e.stopPropagation();
+        // change eventlistener attachment (deattachement of annotation class tag click handler is not necessary here: multiple attachement attempts have no effect)
+        this.removeEventListener('click', closeAccordion);
+        const accordion = this.parentElement.parentElement;
+        accordion.addEventListener('click', openAccordion);
+        // reset annotation class tags css
+        const annotationClassTags = accordion.querySelector('.annotation-class-tags').children;
+        for (const tag of annotationClassTags) {
+          tag.classList.remove('w3-border', 'w3-border-black');
+          tag.style.cursor = '';
+        }
+        // close accordion
+        const panel = this.parentElement.nextElementSibling;
+        panel.style.maxHeight = null;
+        // hide closeChevronDiv
+        this.style.display = 'none';
+        // activate pointer
+        accordion.style.cursor = '';
+      });
+      // add eventlistener for annotation class tags
+      const annotationClassTags = this.querySelector('.annotation-class-tags').children;
+      for (const tag of annotationClassTags) {
+        tag.addEventListener('click', function getTagInfo(e) {
+          this.classList.add('w3-border', 'w3-border-black');
+          this.style.cursor = 'default';
+          // todo: add check, whether another tag button is active (change current classlist command to one that uses just an 'active' class, which controls border and cursor settings)
+        });
+      }
     });
   }
+}
+
+function addEventListener_annotationClassInfos() {
+
 }
 
 function addEventListener_beispieltextBtns() {
