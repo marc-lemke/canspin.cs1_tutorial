@@ -94,7 +94,14 @@ h2 {
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-ort-examples, #accordion-bewegung-examples > p > .w3-tooltip {
+#accordion-dimensionierung-examples {
+  background-color: #d0d0d0;
+  color: #000000;
+  border-left: 6px solid #949494;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#accordion-ort-examples, #accordion-bewegung-examples, #accordion-dimensionierung-examples > p > .w3-tooltip {
   cursor: help;
 }
 .annotation-class-tags {
