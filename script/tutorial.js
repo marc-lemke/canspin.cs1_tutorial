@@ -105,6 +105,17 @@ function addEventListener_mediaQueries() {
     } else {
       languageSelectorElement.classList.replace('w3-display-bottomright', 'w3-container');
     }
+
+    const exampleTextParagraph = document.getElementById('beispieltextText').children[0];
+    const exampleTextReferenceParagraph = document.getElementById('beispieltextText').children[1];
+
+    if (currentWidth > 399) {
+      exampleTextParagraph.classList.add('w3-large');
+      exampleTextReferenceParagraph.classList.remove('w3-small');
+    } else {
+      exampleTextParagraph.classList.remove('w3-large');
+      exampleTextReferenceParagraph.classList.add('w3-small');
+    }
   }
 
   ['load', 'resize'].forEach(function(value) {
