@@ -35,6 +35,7 @@
       </div>
     </div>
   </header>
+  <!-- einfache idee für sprachwechsel: main und footer komplett via js ersetzen. alternativ: css und js so umgestalten, dass alle content-elemente sprachenweise mehrfach im DOM existieren und nach auswahl die sichtbarkeit geändert wird -->
   <main>
     <div id='categories' class='w3-container w3-light-grey w3-center'>
       <h2>Kategorien</h2>
@@ -68,43 +69,59 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-blue-grey'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='ort-container-info' class='w3-hide'>
+              <div id='ort-container-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-container-bk-info' class='w3-hide'>
-                <h5>ORT-CONTAINER-BK</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-container-bk-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-CONTAINER-BK</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-objekt-info' class='w3-hide'>
-                <h5>ORT-OBJEKT</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-objekt-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-OBJEKT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-objekt-bk-info' class='w3-hide'>
-                <h5>ORT-OBJEKT-BK</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-objekt-bk-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-OBJEKT-BK</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-abstrakt-info' class='w3-hide'>
-                <h5>ORT-ABSTRAKT</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-abstrakt-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-ABSTRAKT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-abstrakt-bk-info' class='w3-hide'>
-                <h5>ORT-ABSTRAKT-BK</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-abstrakt-bk-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-ABSTRAKT-BK</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-ue-rx-info' class='w3-hide'>
-                <h5>ORT-UE-RX</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-ue-rx-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-UE-RX</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-ue-xr-info' class='w3-hide'>
-                <h5>ORT-UE-XR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-ue-xr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>ORT-UE-XR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='ort-ue-rr-info' class='w3-hide'>
-                <h5>ORT-UE-RR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='ort-ue-rr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>  
+                  <h5>ORT-UE-RR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
             <!--
@@ -164,37 +181,53 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-red'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='bewegung-subjekt-info' class='w3-hide'>
-                <h5>BEWEGUNG-SUBJEKT</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-subjekt-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-SUBJEKT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-objekt-info' class='w3-hide'>
-                <h5>BEWEGUNG-OBJEKT</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-objekt-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-OBJEKT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-licht-info' class='w3-hide'>
-                <h5>BEWEGUNG-LICHT</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-licht-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-LICHT</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-schall-info' class='w3-hide'>
-                <h5>BEWEGUNG-SCHALL</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-schall-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-SCHALL</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-geruch-info' class='w3-hide'>
-                <h5>BEWEGUNG-GERUCH</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-geruch-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-GERUCH</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-ue-rx-info' class='w3-hide'>
-                <h5>BEWEGUNG-UE-RX</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-UE-RX</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-ue-xr-info' class='w3-hide'>
-                <h5>BEWEGUNG-UE-XR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-UE-XR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='bewegung-ue-rr-info' class='w3-hide'>
-                <h5>BEWEGUNG-UE-RR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='bewegung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>BEWEGUNG-UE-RR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -222,29 +255,41 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-grey'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='dimensionierung-groesse-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-GROESSE</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-groesse-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-GROESSE</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='dimensionierung-menge-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-MENGE</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-menge-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-MENGE</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='dimensionierung-abstand-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-ABSTAND</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-abstand-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-ABSTAND</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='dimensionierung-ue-rx-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-UE-RX</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-UE-RX</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='dimensionierung-ue-xr-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-UE-XR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-UE-XR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='dimensionierung-ue-rr-info' class='w3-hide'>
-                <h5>DIMENSIONIERUNG-UE-RR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='dimensionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>DIMENSIONIERUNG-UE-RR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -270,21 +315,29 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-orange'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='positionierung' class='w3-hide'>
-                <h5>POSITIONIERUNG</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='positionierung-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>POSITIONIERUNG</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='positionierung-ue-rx-info' class='w3-hide'>
-                <h5>POSITIONIERUNG-UE-RX</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='positionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>POSITIONIERUNG-UE-RX</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='positionierung-ue-xr-info' class='w3-hide'>
-                <h5>POSITIONIERUNG-UE-XR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='positionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>POSITIONIERUNG-UE-XR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='positionierung-ue-rr-info' class='w3-hide'>
-                <h5>POSITIONIERUNG-UE-RR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='positionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>POSITIONIERUNG-UE-RR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -310,21 +363,29 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-green'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='richtung' class='w3-hide'>
-                <h5>RICHTUNG</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='richtung-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>RICHTUNG</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='richtung-ue-rx-info' class='w3-hide'>
-                <h5>RICHTUNG-UE-RX</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='richtung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>RICHTUNG-UE-RX</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='richtung-ue-xr-info' class='w3-hide'>
-                <h5>RICHTUNG-UE-XR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='richtung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>RICHTUNG-UE-XR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
-              <div id='richtung-ue-rr-info' class='w3-hide'>
-                <h5>RICHTUNG-UE-RR</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div id='richtung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+                <div class='w3-container'>
+                  <h5>RICHTUNG-UE-RR</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
               </div>
             </div>
           </div>
