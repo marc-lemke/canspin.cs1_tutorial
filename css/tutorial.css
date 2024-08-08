@@ -19,6 +19,27 @@
   background-color: #92ffbd;
   color: #000000;
 }
+.w3-dark-pale-green {
+  background-color: #75f8a2;
+  color: #000000;
+}
+.w3-light-orange {
+  background-color: #fdc46e;
+  color: #000000;
+}
+.w3-text-dark-orange {
+  color: #962a00;
+}
+.w3-text-dark-red {
+  color: #52130e;
+}
+.w3-text-dark-green {
+  color: #427c59;
+}
+.w3-middle-grey {
+  background-color: #cecece;
+  color: #000000;
+}
 .active {
   background-color: #009688;
 }
@@ -88,9 +109,9 @@ h2 {
   padding-right: 32px;
 }
 #accordion-bewegung-examples {
-  background-color: #fef3d3;
+  background-color: #f4947a; /* #fef3d3 */
   color: #000000;
-  border-left: 6px solid #ec8484;
+  border-left: 6px solid #cf5555;
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -101,7 +122,25 @@ h2 {
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-ort-examples, #accordion-bewegung-examples, #accordion-dimensionierung-examples > p > .w3-tooltip {
+#accordion-positionierung-examples {
+  background-color: #ff9662;
+  color: #000000;
+  border-left: 6px solid #b42323;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#accordion-richtung-examples {
+  background-color: #fdf2d2;
+  color: #000000;
+  border-left: 6px solid #c4c886;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+#accordion-ort-examples > p > .w3-tooltip, 
+#accordion-bewegung-examples  > p > .w3-tooltip, 
+#accordion-dimensionierung-examples  > p > .w3-tooltip, 
+#accordion-positionierung-examples > p > .w3-tooltip,
+#accordion-richtung-examples > p > .w3-tooltip {
   cursor: help;
 }
 .annotation-class-tags {
