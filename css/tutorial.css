@@ -42,20 +42,21 @@
 }
 .active {
   background-color: #009688;
+  cursor: default;
 }
-#beispieltextBtns_ort:hover {
+div[data-id="beispieltextBtns_ort"]:hover {
   background-color: #b6d3ff !important;
 }
-#beispieltextBtns_bewegung:hover {
+div[data-id="beispieltextBtns_bewegung"]:hover {
   background-color: #b60000 !important;
 }
-#beispieltextBtns_dimensionierung:hover {
+div[data-id="beispieltextBtns_dimensionierung"]:hover {
   background-color: #8ab6ad !important;
 }
-#beispieltextBtns_positionierung:hover {
+div[data-id="beispieltextBtns_positionierung"]:hover {
   background-color: #db8300 !important;
 }
-#beispieltextBtns_richtung:hover {
+div[data-id="beispieltextBtns_richtung"]:hover {
   background-color: #92ffbd !important;
 }
 
@@ -70,26 +71,26 @@ h2 {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-#beispieltextBtns > div {
+div[data-id="beispieltextBtns"] > div {
   margin: 4px;
 }
-#beispieltextText > :nth-child(1) {
+blockquote[data-id="beispieltextText"] > :nth-child(1) {
   line-height: 2.3em;
 }
-#example > div > blockquote > p > span.farbe-ort,
-#example > div > blockquote > p > span.farbe-bewegung,
-#example > div > blockquote > p > span.farbe-dimensionierung,
-#example > div > blockquote > p > span.farbe-positionierung,
-#example > div > blockquote > p > span.farbe-richtung {
-  cursor: pointer;
+div[data-id="example"] > div > blockquote > p > span.farbe-ort,
+div[data-id="example"] > div > blockquote > p > span.farbe-bewegung,
+div[data-id="example"] > div > blockquote > p > span.farbe-dimensionierung,
+div[data-id="example"] > div > blockquote > p > span.farbe-positionierung,
+div[data-id="example"] > div > blockquote > p > span.farbe-richtung {
+  cursor: help;
   padding: 4px;
 }
 
 /* Accordion */
-.accordion {
+div[data-id="accordion"] {
   transition: 0.4s;
 }
-.accordion > :nth-child(1) {
+div[data-id="accordion"] > :nth-child(1) {
   max-height: 4em;
 }
 .accordion-panel {
@@ -101,46 +102,46 @@ h2 {
 .accordion-panel > h4 {
   margin-top: 36px;
 }
-#accordion-ort-examples {
+div[data-id="accordion-ort-examples"] {
   background-color: #d3e4fe;
   color: #000000;
   border-left: 6px solid #b782e3;
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-bewegung-examples {
+div[data-id="accordion-bewegung-examples"] {
   background-color: #f4947a; /* #fef3d3 */
   color: #000000;
   border-left: 6px solid #cf5555;
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-dimensionierung-examples {
+div[data-id="accordion-dimensionierung-examples"] {
   background-color: #d0d0d0;
   color: #000000;
   border-left: 6px solid #949494;
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-positionierung-examples {
+div[data-id="accordion-positionierung-examples"] {
   background-color: #ff9662;
   color: #000000;
   border-left: 6px solid #b42323;
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-richtung-examples {
+div[data-id="accordion-richtung-examples"] {
   background-color: #fdf2d2;
   color: #000000;
   border-left: 6px solid #c4c886;
   padding-left: 32px;
   padding-right: 32px;
 }
-#accordion-ort-examples > p > .w3-tooltip, 
-#accordion-bewegung-examples  > p > .w3-tooltip, 
-#accordion-dimensionierung-examples  > p > .w3-tooltip, 
-#accordion-positionierung-examples > p > .w3-tooltip,
-#accordion-richtung-examples > p > .w3-tooltip {
+div[data-id="accordion-ort-examples"] > p > .w3-tooltip, 
+div[data-id="accordion-bewegung-examples"]  > p > .w3-tooltip, 
+div[data-id="accordion-dimensionierung-examples"]  > p > .w3-tooltip, 
+div[data-id="accordion-positionierung-examples"] > p > .w3-tooltip,
+div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
   cursor: help;
 }
 .annotation-class-tags {

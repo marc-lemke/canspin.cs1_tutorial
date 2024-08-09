@@ -1,7 +1,7 @@
 const currentCS1version = '1.0.0';
 
 function addEventListener_accordions() {
-  const accordionList = document.getElementsByClassName("accordion");
+  const accordionList = document.querySelectorAll('div[data-id="accordion"]');
   for (const accordion of accordionList) {
     accordion.addEventListener('click', function openAccordion(e) {
       // open accordion
@@ -77,19 +77,48 @@ function addEventListener_annotationClassInfos(_this) {
 }
 
 function addEventListener_beispieltextBtns() {
-  const btnsList = [...document.querySelectorAll('#beispieltextBtns > div')];
+  const btnsList = [...document.querySelectorAll('[data-id="beispieltextBtns"] > div')];
   for (const btn of btnsList) {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
-      const category = e.currentTarget.id.split('_')[1];
+      const category = e.currentTarget.dataset.id.split('_')[1];
       const colorClass = 'farbe-' + category;
       
       e.currentTarget.classList.toggle('w3-white');
       e.currentTarget.classList.toggle(colorClass);
 
-      const spanList = [...document.querySelectorAll(`#beispieltextText > p > [class^=${category}]`)];
+      const spanList = [...document.querySelectorAll(`blockquote[data-id="beispieltextText"] > p > span[class^="${category}"]`)];
       for (const span of spanList) {
         span.classList.toggle(colorClass);
+      }
+    });
+  }
+}
+
+function addEventListener_languageSelect() {
+  const languageButtonsList = [...document.querySelectorAll('#languageSelector > div > button')];
+  for (const btn of languageButtonsList) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      // button controls
+      const clickedLanguageButton = e.currentTarget;
+      const otherLanguageButton = (e.currentTarget.nextElementSibling || e.currentTarget.previousElementSibling);
+      clickedLanguageButton.classList.add('active');
+      otherLanguageButton.classList.remove('active');
+
+      // language controls
+      if (clickedLanguageButton.id === 'german_lang') {
+        // main
+        /* todo */
+
+        // footer
+        [...document.getElementsByTagName('footer')][0].innerHTML = "<p>Gebaut mit <a href='https://www.w3schools.com/w3css/w3css_downloads.asp'>W3.CSS 4.15</a>, <a href='https://fontawesome.com/v4/icons/'>Font Awesome 4.7.0</a> und <a href='https://www.favicon-generator.org/'>Favicon.ico & App Icon Generator</a>.</p>";
+      } else {
+        // main
+        /* todo */
+        
+        // footer
+        [...document.getElementsByTagName('footer')][0].innerHTML = "<p>Created with <a href='https://www.w3schools.com/w3css/w3css_downloads.asp'>W3.CSS 4.15</a>, <a href='https://fontawesome.com/v4/icons/'>Font Awesome 4.7.0</a>, and <a href='https://www.favicon-generator.org/'>Favicon.ico & App Icon Generator</a>.</p>";
       }
     });
   }
@@ -98,6 +127,8 @@ function addEventListener_beispieltextBtns() {
 function addEventListener_mediaQueries() {
   function _executeMediaQueries() {
     const currentWidth = Math.max(document.documentElement['clientWidth'], document.body['scrollWidth'], document.documentElement['scrollWidth'], document.body['offsetWidth'], document.documentElement['offsetWidth']);
+    
+    // language selector position
     const languageSelectorElement = document.getElementById('languageSelector')
 
     if (currentWidth > 900) {
@@ -106,8 +137,9 @@ function addEventListener_mediaQueries() {
       languageSelectorElement.classList.replace('w3-display-bottomright', 'w3-container');
     }
 
-    const exampleTextParagraph = document.getElementById('beispieltextText').children[0];
-    const exampleTextReferenceParagraph = document.getElementById('beispieltextText').children[1];
+    // beispieltextText font size
+    const exampleTextParagraph = document.querySelector('[data-id="beispieltextText"]').children[0];
+    const exampleTextReferenceParagraph = document.querySelector('[data-id="beispieltextText"]').children[1];
 
     if (currentWidth > 399) {
       exampleTextParagraph.classList.add('w3-large');
@@ -133,6 +165,7 @@ function addEventListener_insertValuesOnLoad() {
 }
 
 addEventListener_mediaQueries();
+addEventListener_languageSelect();
 addEventListener_accordions();
 addEventListener_beispieltextBtns();
 addEventListener_insertValuesOnLoad();

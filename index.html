@@ -30,17 +30,16 @@
     <h1>CANSpiN.CS1 Tutorial</h1>
     <div id='languageSelector' class='w3-display-bottomright w3-margin-top'>
       <div class='w3-bar w3-margin-right'>
-        <button class='w3-button w3-tiny w3-hover-teal active'>deutsch</button>
-        <button class='w3-button w3-tiny w3-disabled' disabled>english</button>
+        <button id='german_lang' class='w3-button w3-tiny w3-hover-teal active'>deutsch</button>
+        <button id='english_lang' class='w3-button w3-tiny w3-hover-teal'>english</button>
       </div>
     </div>
   </header>
-  <!-- einfache idee für sprachwechsel: main und footer komplett via js ersetzen. alternativ: css und js so umgestalten, dass alle content-elemente sprachenweise mehrfach im DOM existieren und nach auswahl die sichtbarkeit geändert wird -->
   <main>
-    <div id='categories' class='w3-container w3-light-grey w3-center'>
+    <div data-id='categories' class='w3-container w3-light-grey w3-center'>
       <h2>Kategorien</h2>
       <div class='content'>
-        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-ort accordion'>
+        <div data-id='accordion' class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-ort'>
           <div class='w3-container'>
             <h3>Ort<i class='fa fa-map-marker w3-margin-left' aria-hidden='true'></i></h3>
             <div class='close-accordion-chevron'>
@@ -48,7 +47,7 @@
             </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-ort-examples' class='w3-panel w3-padding-32'>
+            <div data-id='accordion-ort-examples' class='w3-panel w3-padding-32'>
               <p>Sie saß in ihrem <span class='w3-tooltip w3-tag'>Zimmer<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>Container für Figuren</span></span> in <span class='w3-tooltip w3-tag'>Köln<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografischer Container für Figuren</span></span>.</p>
               <p>Plötzlich merkte er, dass er schon wieder an der <span class='w3-tooltip w3-tag'>Schiller-Statue<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografisches Objekt</span></span> vorbeilief.</p>
               <p>Für den Moment schien es so, als ob die <span class='w3-tooltip w3-tag'>Fenster<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> und <span class='w3-tooltip w3-tag'>Türen<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> fest verschlossen wären.</p>
@@ -69,55 +68,55 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-blue-grey'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='ort-container-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-container-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-container-bk-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-container-bk-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER-BK</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-objekt-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-objekt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-OBJEKT</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-objekt-bk-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-objekt-bk-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-OBJEKT-BK</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-abstrakt-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-abstrakt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-ABSTRAKT</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-abstrakt-bk-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-abstrakt-bk-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-ABSTRAKT-BK</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-ue-rx-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-ue-rx-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-UE-RX</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-ue-xr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-ue-xr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-UE-XR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='ort-ue-rr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='ort-ue-rr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>  
                   <h5>ORT-UE-RR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -156,7 +155,7 @@
             -->
           </div>
         </div>
-        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-bewegung accordion'>
+        <div data-id='accordion' class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-bewegung'>
           <div class='w3-container'>
             <h3>Bewegung<i class='fa fa-long-arrow-right w3-margin-left' aria-hidden='true'></i></h3>
             <div class='close-accordion-chevron'>
@@ -164,7 +163,7 @@
             </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-bewegung-examples' class='w3-panel w3-padding-32'>
+            <div data-id='accordion-bewegung-examples' class='w3-panel w3-padding-32'>
               <p>Im Traum <span class='w3-tooltip w3-tag'>spazierte<span class='farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity'>gerichtete Bewegung</span></span> sie einfach in das Restaurant.</p>
             </div>
             <h4>Annotationsklassen</h4>
@@ -181,49 +180,49 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-red'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='bewegung-subjekt-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-subjekt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-SUBJEKT</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-objekt-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-objekt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-OBJEKT</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-licht-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-licht-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-LICHT</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-schall-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-schall-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-SCHALL</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-geruch-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-geruch-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-GERUCH</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-ue-rx-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-UE-RX</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-ue-xr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-UE-XR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='bewegung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='bewegung-ue-rr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-UE-RR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -232,7 +231,7 @@
             </div>
           </div>
         </div>
-        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-dimensionierung accordion'>
+        <div data-id='accordion' class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-dimensionierung'>
           <div class='w3-container'>
             <h3>Dimensionierung<i class='fa fa-arrows w3-margin-left' aria-hidden='true'></i></h3>
             <div class='close-accordion-chevron'>
@@ -240,7 +239,7 @@
             </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-dimensionierung-examples' class='w3-panel w3-padding-32'>
+            <div data-id='accordion-dimensionierung-examples' class='w3-panel w3-padding-32'>
               <p>Vor ihnen lag eine <span class='w3-tooltip w3-tag'>riesige<span class='farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity'>Größe des Raums</span></span> Halle.</p>
             </div>
             <h4>Annotationsklassen</h4>
@@ -255,37 +254,37 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-grey'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='dimensionierung-groesse-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-groesse-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-GROESSE</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='dimensionierung-menge-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-menge-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-MENGE</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='dimensionierung-abstand-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-abstand-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-ABSTAND</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='dimensionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-UE-RX</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='dimensionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-UE-XR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='dimensionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='dimensionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-UE-RR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -294,7 +293,7 @@
             </div>
           </div>
         </div>
-        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-positionierung accordion'>
+        <div data-id='accordion' class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-positionierung'>
           <div class='w3-container'>
             <h3>Positionierung<i class='fa fa-clone w3-margin-left' aria-hidden='true'></i></h3>
             <div class='close-accordion-chevron'>
@@ -302,7 +301,7 @@
             </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-positionierung-examples' class='w3-panel w3-padding-32'>
+            <div data-id='accordion-positionierung-examples' class='w3-panel w3-padding-32'>
               <p><span class='w3-tooltip w3-tag'>Im<span class='farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity'>positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
             </div>
             <h4>Annotationsklassen</h4>
@@ -315,25 +314,25 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-orange'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='positionierung-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='positionierung-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>POSITIONIERUNG</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='positionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='positionierung-ue-rx-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>POSITIONIERUNG-UE-RX</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='positionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='positionierung-ue-xr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>POSITIONIERUNG-UE-XR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='positionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='positionierung-ue-rr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>POSITIONIERUNG-UE-RR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -342,7 +341,7 @@
             </div>
           </div>
         </div>
-        <div class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-richtung accordion'>
+        <div data-id='accordion' class='w3-card w3-btn w3-round w3-block w3-left-align w3-margin-bottom farbe-richtung'>
           <div class='w3-container'>
             <h3>Richtung<i class='fa fa-hand-o-right w3-margin-left' aria-hidden='true'></i></h3>
             <div class='close-accordion-chevron'>
@@ -350,7 +349,7 @@
             </div>
           </div>
           <div class='w3-container accordion-panel'>
-            <div id='accordion-richtung-examples' class='w3-panel w3-padding-32'>
+            <div data-id='accordion-richtung-examples' class='w3-panel w3-padding-32'>
               <p>Im Saal mit den Impressionisten blickte sie lange <span class='w3-tooltip w3-tag'>auf<span class='farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity'>Richtung des Blicks</span></span> den Renoir.</p>
             </div>
             <h4>Annotationsklassen</h4>
@@ -363,25 +362,25 @@
             <h4>Annotieren</h4>
             <div class='annotation-class-infos'>
               <div class='placeholder'><p class='w3-text-dark-green'>Wähle eine Annotationsklasse aus...</p></div>
-              <div id='richtung-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='richtung-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>RICHTUNG</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='richtung-ue-rx-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='richtung-ue-rx-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>RICHTUNG-UE-RX</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='richtung-ue-xr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='richtung-ue-xr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>RICHTUNG-UE-XR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
               </div>
-              <div id='richtung-ue-rr-info' class='w3-animate-opacity w3-hide'>
+              <div data-id='richtung-ue-rr-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>RICHTUNG-UE-RR</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -392,17 +391,17 @@
         </div>
       </div>
     </div>
-    <div id='example' class='w3-container w3-green w3-center'>
+    <div data-id='example' class='w3-container w3-green w3-center'>
       <h2>Beispieltext</h2>
       <div class='content'>
-        <div id='beispieltextBtns' class='w3-bar w3-center'>
-          <div id='beispieltextBtns_ort' class='w3-button w3-round w3-white'>Ort</div>
-          <div id='beispieltextBtns_bewegung' class='w3-button w3-round w3-white'>Bewegung</div>
-          <div id='beispieltextBtns_dimensionierung' class='w3-button w3-round w3-white'>Dimensionierung</div>
-          <div id='beispieltextBtns_positionierung' class='w3-button w3-round w3-white'>Positionierung</div>
-          <div id='beispieltextBtns_richtung' class='w3-button w3-round w3-white'>Richtung</div>
+        <div data-id='beispieltextBtns' class='w3-bar w3-center'>
+          <div data-id='beispieltextBtns_ort' class='w3-button w3-round w3-white'>Ort</div>
+          <div data-id='beispieltextBtns_bewegung' class='w3-button w3-round w3-white'>Bewegung</div>
+          <div data-id='beispieltextBtns_dimensionierung' class='w3-button w3-round w3-white'>Dimensionierung</div>
+          <div data-id='beispieltextBtns_positionierung' class='w3-button w3-round w3-white'>Positionierung</div>
+          <div data-id='beispieltextBtns_richtung' class='w3-button w3-round w3-white'>Richtung</div>
         </div>
-        <blockquote id='beispieltextText' class='w3-panel w3-leftbar w3-white'>
+        <blockquote data-id='beispieltextText' class='w3-panel w3-leftbar w3-white'>
           <p class='w3-large w3-left-align'>Am nächsten Morgen <span class="bewegung-subjekt">schrieb</span> Laura mit <span class="dimensionierung-groesse">großen</span> steifen Buchstaben Name und Wohnung des Herrn Hahn <span class="richtung">auf</span> einen <span class="ort-objekt-bk">Briefumschlag</span>, <span class="bewegung-subjekt">siegelte</span> diesen mit einem Veilchen, welches die Umschrift trug: »ich verberge mich,« und <span class="bewegung-subjekt">steckte</span> die Adresse <span class="richtung">in</span> ihre <span class="ort-objekt-bk">Tasche</span>. Als sie wegen eines Einkaufs <span class="richtung">nach</span> der <span class="ort-container-bk">Stadt</span> <span class="bewegung-subjekt">ging</span>, machte sie auf eigene Gefahr einen Seitenweg <span class="richtung">zu</span> einem Handelsgärtner, mit dem sie persönlich nicht bekannt war. <span class="positionierung">Dort</span> kaufte sie den <span class="dimensionierung-groesse">dicken</span> Busch einer Zwergorange voll von Blüthen und goldenen Früchten, ein Prachtstück des Glashauses, sie <span class="bewegung-subjekt">fuhr</span> den Strauch mit pochendem Herzen <span class="positionierung">in</span> <span class="bewegung-subjekt">geschlossener</span> <span class="ort-container">Droschke</span>, bis sie einen Lohnträger <span class="bewegung-subjekt">fand</span>, und <span class="bewegung-schall">empfahl</span> mit einer außerordentlichen Vergütigung dem <span class="ort-objekt-bk">Träger</span>, Strauch und Brief ohne Gruß und Wort im <span class="ort-container">Hause</span> des Herrn Hahn <span class="bewegung-subjekt">niederzusetzen</span>.</p>
           <p class='w3-left-align break-word'>Gustav Freytag: Die verlorene Handschrift [1864]. ELTeC-Ausgabe. In: Leonard Konle, Fotis Jannidis, Carolin Odebrecht und Lou Burnard (2021): German Novel Corpus (ELTeC-deu). April 2021 release (v.1.0.0) [Data set]. Zenodo. <a href="https://doi.org/10.5281/zenodo.4662482" target="_blank">https://doi.org/10.5281/zenodo.4662482</a>.</p>
         </blockquote> 
