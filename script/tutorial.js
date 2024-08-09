@@ -109,14 +109,50 @@ function addEventListener_languageSelect() {
       // language controls
       if (clickedLanguageButton.id === 'german_lang') {
         // main
-        /* todo */
+        // - language attribute of main
+        [...document.getElementsByTagName('main')][0].setAttribute('lang', 'de');
+        // - h2 headings in categories and example
+        document.querySelector('div[data-id="categories"] > h2').textContent = 'Kategorien';
+        document.querySelector('div[data-id="example"] > h2').textContent = 'Beispieltext';
+        // - h3 headings in categories > accordion
+        const headings = [...document.querySelectorAll('div[data-id="categories"] > .content > div[data-id="accordion"] > .w3-container > h3')];
+        for (const [headingIndex, heading] of headings.entries()) {
+          const _categorieNames = ['Ort', 'Bewegung', 'Dimensionierung', 'Positionierung', 'Richtung'];
+          heading.childNodes[0].nodeValue = _categorieNames[headingIndex];
+        }
+        // - accordion-ort-examples in categories > accordion > accordion-panel
+        // - h4 headings in categories > accordion > accordion-panel
+        // - annotation-class-tags in categories > accordion > accordion-panel
+        // - placeholder in categories > accordion > accordion-panel > annotation-class-infos
+        // - h5 headings in categories > accordion > accordion-panel > annotation-class-infos > div[data-id]
+        // - li in categories > accordion > accordion-panel > annotation-class-infos > div[data-id] > ul
+        // - beispieltextBtns in example
+        // - p in example > .content > blockquote[data-id='beispieltextText']
 
         // footer
         [...document.getElementsByTagName('footer')][0].innerHTML = "<p>Gebaut mit <a href='https://www.w3schools.com/w3css/w3css_downloads.asp'>W3.CSS 4.15</a>, <a href='https://fontawesome.com/v4/icons/'>Font Awesome 4.7.0</a> und <a href='https://www.favicon-generator.org/'>Favicon.ico & App Icon Generator</a>.</p>";
-      } else {
+      } else if (clickedLanguageButton.id === 'english_lang') {
         // main
-        /* todo */
-        
+        // - language attribute of main
+        [...document.getElementsByTagName('main')][0].setAttribute('lang', 'en-US');
+        // - h2 headings in categories and example
+        document.querySelector('div[data-id="categories"] > h2').textContent = 'Categories';
+        document.querySelector('div[data-id="example"] > h2').textContent = 'Example text';
+        // - h3 headings in categories > accordion
+        const headings = [...document.querySelectorAll('div[data-id="categories"] > .content > div[data-id="accordion"] > .w3-container > h3')];
+        for (const [headingIndex, heading] of headings.entries()) {
+          const _categorieNames = ['Place', 'Movement', 'Dimensioning', 'Positioning', 'Direction'];
+          heading.childNodes[0].nodeValue = _categorieNames[headingIndex];
+        }
+        // - accordion-ort-examples in categories > accordion > accordion-panel
+        // - h4 headings in categories > accordion > accordion-panel
+        // - annotation-class-tags in categories > accordion > accordion-panel
+        // - placeholder in categories > accordion > accordion-panel > annotation-class-infos
+        // - h5 headings in categories > accordion > accordion-panel > annotation-class-infos > div[data-id]
+        // - li in categories > accordion > accordion-panel > annotation-class-infos > div[data-id] > ul
+        // - beispieltextBtns in example
+        // - p in example > .content > blockquote[data-id='beispieltextText']
+
         // footer
         [...document.getElementsByTagName('footer')][0].innerHTML = "<p>Created with <a href='https://www.w3schools.com/w3css/w3css_downloads.asp'>W3.CSS 4.15</a>, <a href='https://fontawesome.com/v4/icons/'>Font Awesome 4.7.0</a>, and <a href='https://www.favicon-generator.org/'>Favicon.ico & App Icon Generator</a>.</p>";
       }

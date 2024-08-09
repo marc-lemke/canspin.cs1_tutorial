@@ -167,6 +167,9 @@ div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
 .break-word {
   overflow-wrap: break-word;
 }
+.inline-examples {
+  white-space: nowrap;
+}
 
 /* Tooltips */
 .w3-tooltip > span.w3-text {
