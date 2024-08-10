@@ -1,4 +1,34 @@
 const currentCS1version = '1.0.0';
+const exampleSettings = {
+  'ort': false,
+  'bewegung': false,
+  'dimensionierung': false,
+  'positionierung': false,
+  'richtung': false
+};
+
+function refreshBeispieltextDisplay() {
+  for (const [category, categoryIsDisplayed] of Object.entries(exampleSettings)) {
+    const colorClass = 'farbe-' + category;
+    const beispieltextBtn = document.querySelector(`div[data-id="beispieltextBtns_${category}"]`)
+
+    if (categoryIsDisplayed) {
+      beispieltextBtn.classList.remove('w3-white');
+      beispieltextBtn.classList.add(colorClass);
+      const spanList = [...document.querySelectorAll(`blockquote[data-id="beispieltextText"] > p > span[class^="${category}"]`)];
+      for (const span of spanList) {
+        span.classList.add(colorClass);
+      }
+    } else {
+      beispieltextBtn.classList.add('w3-white');
+      beispieltextBtn.classList.remove(colorClass);
+      const spanList = [...document.querySelectorAll(`blockquote[data-id="beispieltextText"] > p > span[class^="${category}"]`)];
+      for (const span of spanList) {
+        span.classList.remove(colorClass);
+      }
+    }
+  }
+}
 
 function addEventListener_accordions() {
   const accordionList = document.querySelectorAll('div[data-id="accordion"]');
@@ -82,15 +112,8 @@ function addEventListener_beispieltextBtns() {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       const category = e.currentTarget.dataset.id.split('_')[1];
-      const colorClass = 'farbe-' + category;
-      
-      e.currentTarget.classList.toggle('w3-white');
-      e.currentTarget.classList.toggle(colorClass);
-
-      const spanList = [...document.querySelectorAll(`blockquote[data-id="beispieltextText"] > p > span[class^="${category}"]`)];
-      for (const span of spanList) {
-        span.classList.toggle(colorClass);
-      }
+      exampleSettings[category] = !(exampleSettings[category]);
+      refreshBeispieltextDisplay();
     });
   }
 }
@@ -159,7 +182,7 @@ function addEventListener_languageSelect() {
       // - h5 headings in categories > accordion > accordion-panel > annotation-class-infos > div[data-id]
       // - li in categories > accordion > accordion-panel > annotation-class-infos > div[data-id] > ul
       // - beispieltextBtns in example
-      // - p in example > .content > blockquote[data-id='beispieltextText']
+      // - p in example > .content > blockquote[data-id='beispieltextText'] (replace html and execute refreshBeispieltextDisplay to display current text example state)
 
       // footer
       [...document.getElementsByTagName('footer')][0].innerHTML = languageDict[clickedLanguageButton.id]['footer'];
