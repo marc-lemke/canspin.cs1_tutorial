@@ -50,7 +50,7 @@
             <div data-id='accordion-ort-examples' class='w3-panel w3-padding-32'>
               <p>Sie saß in ihrem <span class='w3-tooltip w3-tag'>Zimmer<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>Container für Figuren</span></span> in <span class='w3-tooltip w3-tag'>Köln<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografischer Container für Figuren</span></span>.</p>
               <p>Plötzlich merkte er, dass er schon wieder an der <span class='w3-tooltip w3-tag'>Schiller-Statue<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>geografisches Objekt</span></span> vorbeilief.</p>
-              <p>Für den Moment schien es so, als ob die <span class='w3-tooltip w3-tag'>Fenster<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> und <span class='w3-tooltip w3-tag'>Türen<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> fest verschlossen wären.</p>
+              <p><span class='w3-tooltip w3-tag'>Fenster<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> und <span class='w3-tooltip w3-tag'>Türen<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>raum-strukturelles Objekt</span></span> sollten immer fest verschlossen sein.</p>
               <p>»In der <span class='w3-tooltip w3-tag'>Mitte<span class='farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity'>abstrakter räumlicher Punkt</span></span> des Tischs lag das verschollene Buch«, las er laut aus der Mitte des Buches vor.</p>
             </div>
             <h4>Annotationsklassen</h4>
@@ -83,8 +83,10 @@
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER-BK</h5>
                   <ul>
-                    <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
-                    <li>Sie können Ziel- und Ausgangspunkt von Bewegungen in einem Bewegungskontext (BK) sein.</li>
+                    <li>Container sind <b>Nomen</b>, die auf Räume oder Bereiche verweisen, in denen sich Figuren prototypischerweise aufhalten können.</li>
+                    <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem Bewegungskontext (BK) sein <span class='inline-examples'>(»in den <span class='w3-tag'>Wald</span> laufen«)</span>.</li>
+                    <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»in den Wald <span class='w3-tag'>laufen</span>«)</span>.</li>
+                    <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
                   </ul>
                 </div>
               </div>
@@ -92,12 +94,12 @@
                 <div class='w3-container'>
                   <h5>ORT-OBJEKT</h5>
                   <ul>
-                    <li>Objekte sind geografische, astronomische oder raumstrukturelle Elemente.</li>
-                    <li>Sie haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
-                    <li>Geografische Objekte sind ... .</li>
-                    <li>Astronomische Objekte sind ... .</li>
-                    <li>Raumstrukturelle Ojekte sind ... .</li>
-                    <li>Jedes annotierte Objekt muss sich in einem Referenz-Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt.</li>
+                    <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+                    <li>Mit der Klasse ORT-OBJEKT annotieren wir ausschließlich geografische, astronomische oder raumstrukturelle Objekte.</li>
+                    <li>Geografische Objekte sind Objekte, die auf Welt-, Land- und Stadtkarten auftauchen können ().</li>
+                    <li>Astronomische Objekte sind Objekte, die in Sternenkarten und auf Himmelsgloben auftauchen können ().</li>
+                    <li>Raumstrukturelle Objekte sind Objekte, die die Grenzen eines Raumes markieren ().</li>
+                    <li>Jedes annotierte raumstrukturelle Objekt muss zu einem Container gehören, in dem sich auch Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt, die Tür eines Autos schon.</li>
                   </ul>
                 </div>
               </div>

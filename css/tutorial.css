@@ -155,6 +155,9 @@ div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
   border: 1px solid black;
   cursor: default!important;
 }
+.annotation-class-infos > div > .w3-container > ul > li:last-child {
+  margin-bottom: 3em;
+}
 .close-accordion-chevron {
   position: relative;
   left: 97%;
