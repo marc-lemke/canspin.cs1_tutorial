@@ -66,13 +66,14 @@
               <span class='w3-tag w3-round w3-light-blue'>ORT-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='w3-container'><p class='grammaticalIndicator'>Orte sind <b>Nomen</b>.</p></div>
             <div class='annotation-class-infos'>
-              <div class='placeholder'><p class='w3-text-blue-grey'>Wähle eine Annotationsklasse aus...</p></div>
+              <div class='placeholder w3-container'><p class='w3-text-blue-grey'>Wähle eine Annotationsklasse aus...</p></div>
               <div data-id='ort-container-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER</h5>
                   <ul>
-                    <li>Container sind <b>Nomen</b>, die auf Räume oder Bereiche verweisen, in denen sich Figuren prototypischerweise aufhalten können.</li>
+                    <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
                     <li>Container können sich bewegen <span class='inline-examples'>(»das <span class='w3-tag'>Taxi</span>«)</span> oder auch nicht.</li>
                     <li>Container können konkrete Grenzen haben <span class='inline-examples'>(»das <span class='w3-tag'>Schloss</span>«)</span> oder auch diffuse <span class='inline-examples'>(»der <span class='w3-tag'>Berggipfel</span>«)</span>.</li>
                     <li>Die annotierten Nomen können individuelle Orte, Gattungen <span class='inline-examples'>(»eine <span class='w3-tag'>Stadt</span>«)</span> oder mehrere Orte <span class='inline-examples'>(»viele <span class='w3-tag'>Städte</span>«)</span> bezeichnen.</li>
@@ -83,8 +84,8 @@
                 <div class='w3-container'>
                   <h5>ORT-CONTAINER-BK</h5>
                   <ul>
-                    <li>Container sind <b>Nomen</b>, die auf Räume oder Bereiche verweisen, in denen sich Figuren prototypischerweise aufhalten können.</li>
-                    <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem Bewegungskontext (BK) sein <span class='inline-examples'>(»in den <span class='w3-tag'>Wald</span> laufen«)</span>.</li>
+                    <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
+                    <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»in den <span class='w3-tag'>Wald</span> laufen«)</span>.</li>
                     <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»in den Wald <span class='w3-tag'>laufen</span>«)</span>.</li>
                     <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
                   </ul>
@@ -95,10 +96,10 @@
                   <h5>ORT-OBJEKT</h5>
                   <ul>
                     <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
-                    <li>Mit der Klasse ORT-OBJEKT annotieren wir ausschließlich geografische, astronomische oder raumstrukturelle Objekte.</li>
-                    <li>Geografische Objekte sind Objekte, die auf Welt-, Land- und Stadtkarten auftauchen können ().</li>
-                    <li>Astronomische Objekte sind Objekte, die in Sternenkarten und auf Himmelsgloben auftauchen können ().</li>
-                    <li>Raumstrukturelle Objekte sind Objekte, die die Grenzen eines Raumes markieren ().</li>
+                    <li>Mit der Klasse <i>ORT-OBJEKT</i> annotieren wir ausschließlich geografische, astronomische oder raumstrukturelle Objekte.</li>
+                    <li>Geografische Objekte sind Objekte, die auf Welt-, Land- und Stadtkarten auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Schiller-Statue</span>«)</span>.</li>
+                    <li>Astronomische Objekte sind Objekte, die in Sternenkarten und auf Himmelsgloben auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Mond</span>«)</span>.</li>
+                    <li>Raumstrukturelle Objekte sind Objekte, die die Grenzen eines Raumes markieren <span class='inline-examples'>(»<span class='w3-tag'>Tür</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Zimmerdecke</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Wände</span>«)</span>.</li>
                     <li>Jedes annotierte raumstrukturelle Objekt muss zu einem Container gehören, in dem sich auch Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt, die Tür eines Autos schon.</li>
                   </ul>
                 </div>
@@ -106,19 +107,32 @@
               <div data-id='ort-objekt-bk-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-OBJEKT-BK</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+                    <li>Mit der Klasse <i>ORT-OBJEKT-BK</i> annotieren wir alle Arten von Objekten, die unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sind <span class='inline-examples'>(»auf das <span class='w3-tag'>Gemälde</span> zugehen«)</span>.</li>
+                    <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»auf das Gemälde <span class='w3-tag'>zugehen</span>«)</span>.</li>
+                    <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
+                  </ul>
                 </div>
               </div>
               <div data-id='ort-abstrakt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-ABSTRAKT</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
+                    <li>Beispiele: <span class='inline-examples'>»die <span class='w3-tag'>Mitte</span> des Saales«</span>, <span class='inline-examples'>»alle vier <span class='w3-tag'>Ecken</span> des Zimmers«</span>, <span class='inline-examples'>»<span class='w3-tag'>Nordpol</span>«</span>, <span class='inline-examples'>»an dieser <span class='w3-tag'>Stelle</span> im Raum«</span>, <span class='inline-examples'>»sie fuhren im <span class='w3-tag'>Kreis</span>«</span>.</li>
+                  </ul>
                 </div>
               </div>
               <div data-id='ort-abstrakt-bk-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>ORT-ABSTRAKT-BK</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <ul>
+                    <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
+                    <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»zur besagten <span class='w3-tag'>Stelle</span> laufen«)</span>.</li>
+                    <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»zur besagten Stelle <span class='w3-tag'>laufen</span>«)</span>.</li>
+                    <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
+                  </ul>
                 </div>
               </div>
               <div data-id='ort-ue-rx-info' class='w3-animate-opacity w3-hide'>
@@ -165,8 +179,9 @@
               <span class='w3-tag w3-round w3-pale-red'>BEWEGUNG-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='w3-container'><p class='grammaticalIndicator'>Bewegungen sind <b>Verben und Partizip-Konstruktionen</b>.</p></div>
             <div class='annotation-class-infos'>
-              <div class='placeholder'><p class='w3-text-dark-red'>Wähle eine Annotationsklasse aus...</p></div>
+              <div class='placeholder w3-container'><p class='w3-text-light-red'>Wähle eine Annotationsklasse aus...</p></div>
               <div data-id='bewegung-subjekt-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>BEWEGUNG-SUBJEKT</h5>
@@ -239,8 +254,9 @@
               <span class='w3-tag w3-round w3-light-grey'>DIMENSIONIERUNG-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='w3-container'><p class='grammaticalIndicator'>Dimensionierungen sind <b>attributiv und adverbial verwendete Adjektive, Adverbien und Mengenangaben</b>.</p></div>
             <div class='annotation-class-infos'>
-              <div class='placeholder'><p class='w3-text-grey'>Wähle eine Annotationsklasse aus...</p></div>
+              <div class='placeholder w3-container'><p class='w3-text-grey'>Wähle eine Annotationsklasse aus...</p></div>
               <div data-id='dimensionierung-groesse-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>DIMENSIONIERUNG-GROESSE</h5>
@@ -299,8 +315,9 @@
               <span class='w3-tag w3-round w3-light-orange'>POSITIONIERUNG-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='w3-container'><p class='grammaticalIndicator'>Positionierungen sind <b>Präpositionen, Lokal-Adverbien, adverbial und attributiv verwendete Adjektive sowie Possessivpronomen und Artikel</b>.</p></div>
             <div class='annotation-class-infos'>
-              <div class='placeholder'><p class='w3-text-dark-orange'>Wähle eine Annotationsklasse aus...</p></div>
+              <div class='placeholder w3-container'><p class='w3-text-dark-orange'>Wähle eine Annotationsklasse aus...</p></div>
               <div data-id='positionierung-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>POSITIONIERUNG</h5>
@@ -347,8 +364,9 @@
               <span class='w3-tag w3-round w3-pale-green'>RICHTUNG-UE-RR</span>
             </p>
             <h4>Annotieren</h4>
+            <div class='w3-container'><p class='grammaticalIndicator'>Richtungen sind <b>Präpositionen, Lokal-Adverbien, adverbial verwendete Adjektive und richtungsangebende Nomen ohne Artikel</b>.</p></div>
             <div class='annotation-class-infos'>
-              <div class='placeholder'><p class='w3-text-dark-green'>Wähle eine Annotationsklasse aus...</p></div>
+              <div class='placeholder w3-container'><p class='w3-text-dark-green'>Wähle eine Annotationsklasse aus...</p></div>
               <div data-id='richtung-info' class='w3-animate-opacity w3-hide'>
                 <div class='w3-container'>
                   <h5>RICHTUNG</h5>
