@@ -144,6 +144,73 @@ function addEventListener_languageSelect() {
             'Positionierung',
             'Richtung'
           ],
+          'h4_headings': [
+            'Annotationsklassen',
+            'Annotieren'
+          ],
+          'accordion_initial_examples': [
+            `
+            <p>Sie saß in ihrem <span class="w3-tooltip w3-tag">Zimmer<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">Container für Figuren</span></span> in <span class="w3-tooltip w3-tag">Köln<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">geografischer Container für Figuren</span></span>.</p>
+            <p>Plötzlich merkte er, dass er schon wieder an der <span class="w3-tooltip w3-tag">Schiller-Statue<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">geografisches Objekt</span></span> vorbeilief.</p>
+            <p><span class="w3-tooltip w3-tag">Fenster<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">raum-strukturelles Objekt</span></span> und <span class="w3-tooltip w3-tag">Türen<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">raum-strukturelles Objekt</span></span> sollten immer fest verschlossen sein.</p>
+            <p>»In der <span class="w3-tooltip w3-tag">Mitte<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">abstrakter räumlicher Punkt</span></span> des Tischs lag das verschollene Buch«, las er laut aus der Mitte des Buches vor.</p>
+            `,
+            `
+            <p>Im Traum <span class="w3-tooltip w3-tag">spazierte<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">gerichtete Bewegung</span></span> sie einfach in das Restaurant.</p>
+            `,
+            `
+            <p>Vor ihnen lag eine <span class="w3-tooltip w3-tag">riesige<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Größe des Raums</span></span> Halle.</p>
+            `,
+            `
+            <p><span class="w3-tooltip w3-tag">Im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
+            `,
+            `
+            <p>Im Saal mit den Impressionisten blickte sie lange <span class="w3-tooltip w3-tag">auf<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung des Blicks</span></span> den Renoir.</p>
+            `
+          ],
+          'annotation_classes_tags': [
+            [
+              'ORT-CONTAINER',
+              'ORT-CONTAINER-BK',
+              'ORT-OBJEKT',
+              'ORT-OBJEKT-BK',
+              'ORT-ABSTRAKT',
+              'ORT-ABSTRAKT-BK',
+              'ORT-UE-RX',
+              'ORT-UE-XR',
+              'ORT-UE-RR'
+            ],
+            [
+              'BEWEGUNG-SUBJEKT',
+              'BEWEGUNG-OBJEKT',
+              'BEWEGUNG-LICHT',
+              'BEWEGUNG-SCHALL',
+              'BEWEGUNG-GERUCH',
+              'BEWEGUNG-UE-RX',
+              'BEWEGUNG-UE-XR',
+              'BEWEGUNG-UE-RR'
+            ],
+            [
+              'DIMENSIONIERUNG-GROESSE',
+              'DIMENSIONIERUNG-MENGE',
+              'DIMENSIONIERUNG-ABSTAND',
+              'DIMENSIONIERUNG-UE-RX',
+              'DIMENSIONIERUNG-UE-XR',
+              'DIMENSIONIERUNG-UE-RR'
+            ],
+            [
+              'POSITIONIERUNG',
+              'POSITIONIERUNG-UE-RX',
+              'POSITIONIERUNG-UE-XR',
+              'POSITIONIERUNG-UE-RR'
+            ],
+            [
+              'RICHTUNG',
+              'RICHTUNG-UE-RX',
+              'RICHTUNG-UE-XR',
+              'RICHTUNG-UE-RR'
+            ]
+          ],
           'footer': '<p>Gebaut mit <a href="https://www.w3schools.com/w3css/w3css_downloads.asp">W3.CSS 4.15</a>, <a href="https://fontawesome.com/v4/icons/">Font Awesome 4.7.0</a> und <a href="https://www.favicon-generator.org/">Favicon.ico & App Icon Generator</a>.</p>'
         },
         'english_lang': {
@@ -159,6 +226,65 @@ function addEventListener_languageSelect() {
             'Positioning',
             'Direction'
           ],
+          'h4_headings': [
+            'Annotation classes',
+            'Annotate'
+          ],
+          'accordion_initial_examples': [
+            `
+            <p>She was sitting in her <span class="w3-tooltip w3-tag">room<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">container for characters</span></span> in <span class="w3-tooltip w3-tag">Cologne<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">geographical container for characters</span></span>.</p>
+            <p>Suddenly he realized that he was walking past the <span class="w3-tooltip w3-tag">Schiller statue<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">geographical object</span></span> again.</p>
+            <p><span class="w3-tooltip w3-tag">Windows<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">space-structural object</span></span> and <span class="w3-tooltip w3-tag">doors<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">space-structural object</span></span> should always be tightly closed.</p>
+            <p>»In the <span class="w3-tooltip w3-tag">middle<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">abstract spatial point</span></span> of the table lay the lost book«, he read aloud from the middle of the book.</p>
+            `,
+            '',
+            '',
+            '',
+            ''
+          ],
+          'annotation_classes_tags': [
+            [
+              'PLACE-CONTAINER',
+              'PLACE-CONTAINER-MC',
+              'PLACE-OBJECT',
+              'PLACE-OBJECT-MC',
+              'PLACE-ABSTRACT',
+              'PLACE-ABSTRACT-MC',
+              'PLACE-T-SpX',
+              'PLACE-T-XSp',
+              'PLACE-T-SpSp'
+            ],
+            [
+              'MOVEMENT-SUBJECT',
+              'MOVEMENT-OBJECT',
+              'MOVEMENT-LIGHT',
+              'MOVEMENT-SOUND',
+              'MOVEMENT-SMELL',
+              'MOVEMENT-T-SpX',
+              'MOVEMENT-T-XSp',
+              'MOVEMENT-T-SpSp'
+            ],
+            [
+              'DIMENSIONING-SIZE',
+              'DIMENSIONING-AMOUNT',
+              'DIMENSIONING-DISTANCE',
+              'DIMENSIONING-T-SpX',
+              'DIMENSIONING-T-XSp',
+              'DIMENSIONING-T-SpSp'
+            ],
+            [
+              'POSITIONING',
+              'POSITIONING-T-SpX',
+              'POSITIONING-T-XSp',
+              'POSITIONING-T-SpSp'
+            ],
+            [
+              'DIRECTION',
+              'DIRECTION-T-SpX',
+              'DIRECTION-T-XSp',
+              'DIRECTION-T-SpSp'
+            ]
+          ],
           'footer': '<p>Created with <a href="https://www.w3schools.com/w3css/w3css_downloads.asp">W3.CSS 4.15</a>, <a href="https://fontawesome.com/v4/icons/">Font Awesome 4.7.0</a>, and <a href="https://www.favicon-generator.org/">Favicon.ico & App Icon Generator</a>.</p>'
         }
       };
@@ -170,14 +296,32 @@ function addEventListener_languageSelect() {
       document.querySelector('div[data-id="categories"] > h2').textContent = languageDict[clickedLanguageButton.id]['h2_headings']['categories'];
       document.querySelector('div[data-id="example"] > h2').textContent = languageDict[clickedLanguageButton.id]['h2_headings']['example'];
       // - h3 headings in categories > accordion
-      const headings = [...document.querySelectorAll('div[data-id="categories"] > .content > div[data-id="accordion"] > .w3-container > h3')];
-      for (const [headingIndex, heading] of headings.entries()) {
+      const h3_headings = [...document.querySelectorAll('div[data-id="categories"] > .content > div[data-id="accordion"] > .w3-container > h3')];
+      for (const [headingIndex, heading] of h3_headings.entries()) {
         const _categorieNames = languageDict[clickedLanguageButton.id]['h3_headings'];
         heading.childNodes[0].nodeValue = _categorieNames[headingIndex];
       }
+      // list of all five accordion panels for following translations inside those panels
+      const accordionPanels = [...document.querySelectorAll('.accordion-panel')];
       // - accordion-ort-examples in categories > accordion > accordion-panel
+      for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
+        accordionPanel.children[0].innerHTML = languageDict[clickedLanguageButton.id]['accordion_initial_examples'][accordionPanelIndex];
+      }
       // - h4 headings in categories > accordion > accordion-panel
+      for (const accordionPanel of accordionPanels) {
+        const h4_headings = [...accordionPanel.querySelectorAll('h4')];
+        for (const [headingIndex, heading] of h4_headings.entries()) {
+          const _accordionPanelHeadings = languageDict[clickedLanguageButton.id]['h4_headings'];
+          heading.childNodes[0].nodeValue = _accordionPanelHeadings[headingIndex];
+        }
+      }
       // - annotation-class-tags in categories > accordion > accordion-panel
+      for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
+        const annotationClassTags = [...accordionPanel.querySelectorAll('.annotation-class-tags > span')];
+        for (const [annotationClassTagIndex, annotationClassTag] of annotationClassTags.entries()) {
+          annotationClassTag.textContent = languageDict[clickedLanguageButton.id]['annotation_classes_tags'][accordionPanelIndex][annotationClassTagIndex];
+        }
+      }
       // - placeholder in categories > accordion > accordion-panel > annotation-class-infos
       // - h5 headings in categories > accordion > accordion-panel > annotation-class-infos > div[data-id]
       // - li in categories > accordion > accordion-panel > annotation-class-infos > div[data-id] > ul
@@ -186,6 +330,13 @@ function addEventListener_languageSelect() {
 
       // footer
       [...document.getElementsByTagName('footer')][0].innerHTML = languageDict[clickedLanguageButton.id]['footer'];
+
+      // refresh display of open accordion panels
+      for (const accordionPanel of accordionPanels) {
+        if (accordionPanel.style.maxHeight) {
+          accordionPanel.style.maxHeight = accordionPanel.scrollHeight + 'px';
+        }
+      }
     });
   }
 }
