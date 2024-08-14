@@ -168,7 +168,7 @@ function addEventListener_languageSelect() {
             <p>Im Saal mit den Impressionisten blickte sie lange <span class="w3-tooltip w3-tag">auf<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung des Blicks</span></span> den Renoir.</p>
             `
           ],
-          'annotation_classes_tags': [
+          'annotation_classes': [
             [
               'ORT-CONTAINER',
               'ORT-CONTAINER-BK',
@@ -211,6 +211,151 @@ function addEventListener_languageSelect() {
               'RICHTUNG-UE-RR'
             ]
           ],
+          'annotation_classes_infos': [
+            [
+              `
+              <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Container können sich bewegen <span class='inline-examples'>(»das <span class='w3-tag'>Taxi</span>«)</span>.</li>
+              <li>Container können konkrete Grenzen haben <span class='inline-examples'>(»das <span class='w3-tag'>Schloss</span>«)</span> oder auch diffuse <span class='inline-examples'>(»der <span class='w3-tag'>Berggipfel</span>«)</span>.</li>
+              <li>Die annotierten Nomen können individuelle Orte, Gattungen <span class='inline-examples'>(»eine <span class='w3-tag'>Stadt</span>«)</span> oder mehrere Orte <span class='inline-examples'>(»viele <span class='w3-tag'>Städte</span>«)</span> bezeichnen.</li>
+              `,
+              `
+              <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»in den <span class='w3-tag'>Wald</span> laufen«)</span>.</li>
+              <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»in den Wald <span class='w3-tag'>laufen</span>«)</span>.</li>
+              <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
+              `,
+              `
+              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li><b>Mit der Klasse <i>ORT-OBJEKT</i> annotieren wir ausschließlich geografische, astronomische oder raumstrukturelle Objekte.</b></li>
+              <li>Geografische Objekte sind Objekte, die auf Welt-, Land- und Stadtkarten auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Schiller-Statue</span>«)</span>.</li>
+              <li>Astronomische Objekte sind Objekte, die in Sternenkarten und auf Himmelsgloben auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Mond</span>«)</span>.</li>
+              <li>Raumstrukturelle Objekte sind Objekte, die die Grenzen eines Raumes markieren <span class='inline-examples'>(»<span class='w3-tag'>Tür</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Zimmerdecke</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Wände</span>«)</span>.</li>
+              <li>Jedes annotierte Objekt muss zu einem Container gehören, in dem sich auch Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt, die Tür eines Autos schon.</li>
+              `,
+              `
+              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li><b>Mit der Klasse <i>ORT-OBJEKT-BK</i> annotieren wir, im Gegensatz zur Klasse <i>ORT-OBJEKT</i>, alle Arten von Objekten</b>, die unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sind <span class='inline-examples'>(»auf das <span class='w3-tag'>Gemälde</span> zugehen«)</span>.</li>
+              <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»auf das Gemälde <span class='w3-tag'>zugehen</span>«)</span>.</li>
+              <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
+              <li>Jedes annotierte Objekt muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können: Das angeschaute Gemälde in einem Ausstellungsraum wird annotiert, das Gemälde in einer Tasche nicht.</li>
+              `,
+              `
+              <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
+              <li>Beispiele: <span class='inline-examples'>»die <span class='w3-tag'>Mitte</span> des Saales«</span>, <span class='inline-examples'>»alle vier <span class='w3-tag'>Ecken</span> des Zimmers«</span>, <span class='inline-examples'>»<span class='w3-tag'>Nordpol</span>«</span>, <span class='inline-examples'>»an dieser <span class='w3-tag'>Stelle</span> im Raum«</span>, <span class='inline-examples'>»sie fuhren im <span class='w3-tag'>Kreis</span>«</span>.</li>
+              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können.</li>
+              `,
+              `
+              <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
+              <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»zur besagten <span class='w3-tag'>Stelle</span> laufen«)</span>.</li>
+              <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»zur besagten Stelle <span class='w3-tag'>laufen</span>«)</span>.</li>
+              <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
+              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können.</li>
+              `,
+              `
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »Sie verirrte sich in <span class='inline-examples'>ihrem <span class='w3-tag'>Gedankenpalast</span>.«</span></li>
+              <li>Sie kann kreativ-metonymisch sein: »Haben sich die Leute aus Berlin schon gemeldet? - <span class='inline-examples'>Ja, <span class='w3-tag'>Berlin</span> hat</span> den Vertrag widerrufen.«</li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »Ein günstiger Zufall führte auf <span class='inline-examples'>dieser <span class='w3-tag'>Spur</span> zum</span> gesuchten Buch.«</li>
+              <li>Sie kann idiomatisch-metonymisch sein: »das <span class='inline-examples'>Flavische <span class='w3-tag'>Kaiserhaus</span>«</span>.</li>
+              `,
+              `
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »Dort leuchtet aus <span class='inline-examples'>tiefer <span class='w3-tag'>Dunkelheit</span> die</span> brennende Kerze.«</li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »hier rastet <span class='inline-examples'>bei <span class='w3-tag'>Tage</span> der</span> Wanderer«.</li>
+              `,
+              `
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »Verschwinde hinter einer <span class='inline-examples'>Wolke, <span class='w3-tag'>Mond</span>, die</span> Gesellschaft meines Professors ist mir lieber!«</li>
+              <li>Sie kann idiomatisch-metonymisch sein: »sie macht <span class='inline-examples'>einen <span class='w3-tag'>Seitenweg</span> zur</span> Bibliothek«.</li>
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ]
+          ],
+          'grammaticalIndicators': [
+            'Orte sind <b>Nomen</b>.',
+            'Bewegungen sind <b>Verben und Partizip-Konstruktionen</b>.',
+            'Dimensionierungen sind <b>attributiv und adverbial verwendete Adjektive, Adverbien und Mengenangaben</b>.',
+            'Positionierungen sind <b>Präpositionen, Lokal-Adverbien, adverbial und attributiv verwendete Adjektive sowie Possessivpronomen und Artikel</b>.',
+            'Richtungen sind <b>Präpositionen, Lokal-Adverbien, adverbial verwendete Adjektive und richtungsangebende Nomen ohne Artikel</b>.'
+          ],
+          'placeholder': 'Wähle eine Annotationsklasse aus...',
           'footer': '<p>Gebaut mit <a href="https://www.w3schools.com/w3css/w3css_downloads.asp">W3.CSS 4.15</a>, <a href="https://fontawesome.com/v4/icons/">Font Awesome 4.7.0</a> und <a href="https://www.favicon-generator.org/">Favicon.ico & App Icon Generator</a>.</p>'
         },
         'english_lang': {
@@ -242,7 +387,7 @@ function addEventListener_languageSelect() {
             '',
             ''
           ],
-          'annotation_classes_tags': [
+          'annotation_classes': [
             [
               'PLACE-CONTAINER',
               'PLACE-CONTAINER-MC',
@@ -285,6 +430,151 @@ function addEventListener_languageSelect() {
               'DIRECTION-T-SpSp'
             ]
           ],
+          'annotation_classes_infos': [
+            [
+              `
+              <li>Containers are spaces or areas in which figures can prototypically reside.</li>
+              <li>Containers can move <span class='inline-examples'>(»the <span class='w3-tag'>taxi</span>«)</span>.</li>
+              <li>Containers can have specific boundaries <span class='inline-examples'>(»the <span class='w3-tag'>castle</span>«)</span> or diffuse <span class='inline-examples'>(»the <span class='w3-tag'>mountain top</span>«)</span>.</li>
+              <li>The annotated nouns can denote individual places, genera <span class='inline-examples'>(»a <span class='w3-tag'>city</span>«)</span> or several places <span class='inline-examples'>(»many <span class='w3-tag'>cities</span>«)</span>.</li>
+              `,
+              `
+              <li>Containers are spaces or areas in which figures can prototypically reside.</li>
+              <li>They can be the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to run into the <span class='w3-tag'>forest</span>«)</span>.</li>
+              <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>run</span> into the forest«)</span>.</li>
+              <li>A movement can also be a perception or something else: See the information on the movement category.</li>
+              `,
+              `
+              <li>Objects have spatial dimensions, but are not containers in which figures can prototypically reside.</li>
+              <li><b>With the class <i>PLACE-OBJECT</i> we only annotate geographical, astronomical or space-structural objects</b>.</li>
+              <li>Geographical objects are objects that can appear on world, country and city maps <span class='inline-examples'>(»<span class='w3-tag'>Schiller statue</span>«)</span>.</li>
+              <li>Astronomical objects are objects that can appear on star charts and celestial globes <span class='inline-examples'>(»<span class='w3-tag'>Moon</span>«)</span>.</li>
+              <li>Space-structural objects are objects that mark the boundaries of a room or area <span class='inline-examples'>(»<span class='w3-tag'>door</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>ceiling</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>walls</span>«)</span>.</li>
+              <li>Every annotated object must belong to a container in which characters can prototypically reside: The clasp of a handbag therefore does not count as a space-structural object, but the door of a car does.</li>
+              `,
+              `
+              <li>Objects have spatial dimensions, but are not containers in which figures can prototypically reside.</li>
+              <li><b>With the class <i>PLACE-OBJECT-MC</i> we annotate, in contrast to the class <i>PLACE-OBJECT</i>, all types of objects</b> that are the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to move towards the <span class='w3-tag'>painting</span>«)</span>.</li>
+              <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>move</span> towards the painting«)</span>.</li>
+              <li>A movement can also be a perception or something else: See the information on the movement category.</li>
+              <li>Each annotated object must be located in a container in which characters can prototypically reside: The painting viewed in an exhibition room is annotated, the painting in a bag is not.</li>
+              `,
+              `
+              <li>In contrast to containers and objects, abstracts have no spatial extension, but are designations for points or geometric figures.</li>
+              <li>Examples: <span class='inline-examples'>»the <span class='w3-tag'>center</span> of the room«</span>, <span class='inline-examples'>»all four <span class='w3-tag'>corners</span> of the room«</span>, <span class='inline-examples'>»<span class='w3-tag'>North Pole</span>«</span>, <span class='inline-examples'>»at this <span class='w3-tag'>point</span> in the room«</span>, <span class='inline-examples'>»the drove in <span class='w3-tag'>circles</span>«</span>.</li>
+              <li>Each annotated abstract must be located in a container in which characters can prototypically reside.</li>
+              `,
+              `
+              <li>In contrast to containers and objects, abstracts have no spatial extension, but are designations for points or geometric figures.</li>
+              <li>They can be the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to run to the said <span class='w3-tag'>site</span>«)</span>.</li>
+              <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>run</span> to the said site«)</span>.</li>
+              <li>A movement can also be a perception or something else: See the information on the movement category.</li>
+              <li>Each annotated abstract must be located in a container in which characters can prototypically reside.</li>
+              `,
+              `
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li>The transferred use can be creative-metaphorical: »She got lost in <span class='inline-examples'>her <span class='w3-tag'>mind palace</span>.«</span></li>
+              <li>It can be creative-metonymic: »Have the people from Berlin contacted you yet? - <span class='inline-examples'>Yes, <span class='w3-tag'>Berlin</span> has</span> canceled the contract.«</li>
+              <li>It can be idiomatic-metaphorical: »A favorable coincidence led on <span class='inline-examples'>this <span class='w3-tag'>track</span> to the</span> book I was looking for.«</li>
+              <li>It can be idiomatic-metonymic: »the <span class='inline-examples'>Flavian <span class='w3-tag'>imperial house</span>«</span>.</li>
+              `,
+              `
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
+              <li>The transferred use can be creative-metaphorical: »There, out of <span class='inline-examples'>deep <span class='w3-tag'>darkness</span> shines the</span> burning candle.«</li>
+              <li>It can be idiomatic-metaphorical: »here the hiker rests <span class='inline-examples'>by <span class='w3-tag'>day</span>«.</span></li>
+              `,
+              `
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or are different representatives of the same spatial concept.</li>
+              <li>The transferred use can be creative-metaphorical: »Disappear behind a <span class='inline-examples'>cloud, <span class='w3-tag'>Moon</span>, I prefer the</span> company of my professor!«</li>
+              <li>It can be idiomatic-metonymic: »she makes <span class='inline-examples'>a <span class='w3-tag'>side path</span> to the</span> library«.</li>
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ],
+            [
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `,
+              `
+              
+              `
+            ]
+          ],
+          'grammaticalIndicators': [
+            'Places are <b>nouns</b>.',
+            'Movements are <b>verbs and participle constructions</b>.',
+            'Dimensionings are <b>attributively and adverbially used adjectives, adverbs and quantities</b>.',
+            'Positionings are <b>prepositions, local adverbs, adverbially and attributively used adjectives as well as possessive pronouns and articles</b>.',
+            'Directions are <b>prepositions, local adverbs, adverbially used adjectives and directional nouns without articles</b>.'
+          ],
+          'placeholder': 'Select an annotation class...',
           'footer': '<p>Created with <a href="https://www.w3schools.com/w3css/w3css_downloads.asp">W3.CSS 4.15</a>, <a href="https://fontawesome.com/v4/icons/">Font Awesome 4.7.0</a>, and <a href="https://www.favicon-generator.org/">Favicon.ico & App Icon Generator</a>.</p>'
         }
       };
@@ -319,12 +609,35 @@ function addEventListener_languageSelect() {
       for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
         const annotationClassTags = [...accordionPanel.querySelectorAll('.annotation-class-tags > span')];
         for (const [annotationClassTagIndex, annotationClassTag] of annotationClassTags.entries()) {
-          annotationClassTag.textContent = languageDict[clickedLanguageButton.id]['annotation_classes_tags'][accordionPanelIndex][annotationClassTagIndex];
+          annotationClassTag.textContent = languageDict[clickedLanguageButton.id]['annotation_classes'][accordionPanelIndex][annotationClassTagIndex];
         }
       }
+      // - grammatical indicators in categories > accordion > accordion-panel
+      for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
+        accordionPanel.querySelector('.grammaticalIndicator').innerHTML = languageDict[clickedLanguageButton.id]['grammaticalIndicators'][accordionPanelIndex];
+      }
       // - placeholder in categories > accordion > accordion-panel > annotation-class-infos
+      for (const accordionPanel of accordionPanels) {
+        const placeholders = [...accordionPanel.querySelectorAll('.placeholder > p')];
+        for (const placeholder of placeholders) {
+          placeholder.textContent = languageDict[clickedLanguageButton.id]['placeholder'];
+        }
+      }
       // - h5 headings in categories > accordion > accordion-panel > annotation-class-infos > div[data-id]
+      for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
+        const h5_headings = [...accordionPanel.querySelectorAll('h5')];
+        for (const [headingIndex, heading] of h5_headings.entries()) {
+          const _classInfoHeadings = languageDict[clickedLanguageButton.id]['annotation_classes'][accordionPanelIndex];
+          heading.textContent = _classInfoHeadings[headingIndex];
+        }
+      }
       // - li in categories > accordion > accordion-panel > annotation-class-infos > div[data-id] > ul
+      for (const [accordionPanelIndex, accordionPanel] of accordionPanels.entries()) {
+        const annotationClassesInfos = [...accordionPanel.querySelectorAll('ul')];
+        for (const [annotationClassInfosIndex, annotationClassInfos] of annotationClassesInfos.entries()) {
+          annotationClassInfos.innerHTML = languageDict[clickedLanguageButton.id]['annotation_classes_infos'][accordionPanelIndex][annotationClassInfosIndex];
+        }
+      }
       // - beispieltextBtns in example
       // - p in example > .content > blockquote[data-id='beispieltextText'] (replace html and execute refreshBeispieltextDisplay to display current text example state)
 

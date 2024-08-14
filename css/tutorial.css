@@ -89,6 +89,7 @@ div[data-id="example"] > div > blockquote > p > span.farbe-richtung {
 /* Accordion */
 div[data-id="accordion"] {
   transition: 0.4s;
+  user-select: text;
 }
 div[data-id="accordion"] > :nth-child(1) {
   max-height: 4em;
