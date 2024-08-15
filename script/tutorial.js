@@ -157,6 +157,7 @@ function addEventListener_languageSelect() {
             `,
             `
             <p>Im Traum <span class="w3-tooltip w3-tag">spazierte<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">gerichtete Bewegung</span></span> sie einfach in das Restaurant.</p>
+            <p>»Brügge <span class="w3-tooltip w3-tag">sehen<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">gerichtete optische Wahrnehmung</span></span> ... und sterben?« läuft ab morgen in unserem Kino.</p>
             `,
             `
             <p>Vor ihnen lag eine <span class="w3-tooltip w3-tag">riesige<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Größe des Raums</span></span> Halle.</p>
@@ -382,7 +383,10 @@ function addEventListener_languageSelect() {
             <p><span class="w3-tooltip w3-tag">Windows<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">space-structural object</span></span> and <span class="w3-tooltip w3-tag">doors<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">space-structural object</span></span> should always be tightly closed.</p>
             <p>»In the <span class="w3-tooltip w3-tag">middle<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">abstract spatial point</span></span> of the table lay the lost book«, he read aloud from the middle of the book.</p>
             `,
-            '',
+            `
+            <p>In her dream she <span class="w3-tooltip w3-tag">walked<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directed movement</span></span> into the restaurant.</p>
+            <p>»I <span class="w3-tooltip w3-tag">see<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directed visual perception</span></span> you« opens in our theaters tomorrow.</p>
+            `,
             '',
             '',
             ''
@@ -433,19 +437,19 @@ function addEventListener_languageSelect() {
           'annotation_classes_infos': [
             [
               `
-              <li>Containers are spaces or areas in which figures can prototypically reside.</li>
+              <li>Containers are spaces or areas in which characters can prototypically reside.</li>
               <li>Containers can move <span class='inline-examples'>(»the <span class='w3-tag'>taxi</span>«)</span>.</li>
               <li>Containers can have specific boundaries <span class='inline-examples'>(»the <span class='w3-tag'>castle</span>«)</span> or diffuse <span class='inline-examples'>(»the <span class='w3-tag'>mountain top</span>«)</span>.</li>
               <li>The annotated nouns can denote individual places, genera <span class='inline-examples'>(»a <span class='w3-tag'>city</span>«)</span> or several places <span class='inline-examples'>(»many <span class='w3-tag'>cities</span>«)</span>.</li>
               `,
               `
-              <li>Containers are spaces or areas in which figures can prototypically reside.</li>
+              <li>Containers are spaces or areas in which characters can prototypically reside.</li>
               <li>They can be the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to run into the <span class='w3-tag'>forest</span>«)</span>.</li>
               <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>run</span> into the forest«)</span>.</li>
               <li>A movement can also be a perception or something else: See the information on the movement category.</li>
               `,
               `
-              <li>Objects have spatial dimensions, but are not containers in which figures can prototypically reside.</li>
+              <li>Objects have spatial dimensions, but are not containers in which characters can prototypically reside.</li>
               <li><b>With the class <i>PLACE-OBJECT</i> we only annotate geographical, astronomical or space-structural objects</b>.</li>
               <li>Geographical objects are objects that can appear on world, country and city maps <span class='inline-examples'>(»<span class='w3-tag'>Schiller statue</span>«)</span>.</li>
               <li>Astronomical objects are objects that can appear on star charts and celestial globes <span class='inline-examples'>(»<span class='w3-tag'>Moon</span>«)</span>.</li>
@@ -453,7 +457,7 @@ function addEventListener_languageSelect() {
               <li>Every annotated object must belong to a container in which characters can prototypically reside: The clasp of a handbag therefore does not count as a space-structural object, but the door of a car does.</li>
               `,
               `
-              <li>Objects have spatial dimensions, but are not containers in which figures can prototypically reside.</li>
+              <li>Objects have spatial dimensions, but are not containers in which characters can prototypically reside.</li>
               <li><b>With the class <i>PLACE-OBJECT-MC</i> we annotate, in contrast to the class <i>PLACE-OBJECT</i>, all types of objects</b> that are the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to move towards the <span class='w3-tag'>painting</span>«)</span>.</li>
               <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>move</span> towards the painting«)</span>.</li>
               <li>A movement can also be a perception or something else: See the information on the movement category.</li>
@@ -487,7 +491,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or are different representatives of the same spatial concept.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
               <li>The transferred use can be creative-metaphorical: »Disappear behind a <span class='inline-examples'>cloud, <span class='w3-tag'>Moon</span>, I prefer the</span> company of my professor!«</li>
               <li>It can be idiomatic-metonymic: »she makes <span class='inline-examples'>a <span class='w3-tag'>side path</span> to the</span> library«.</li>
               `
