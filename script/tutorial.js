@@ -158,9 +158,14 @@ function addEventListener_languageSelect() {
             `
             <p>Im Traum <span class="w3-tooltip w3-tag">spazierte<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">gerichtete Bewegung</span></span> sie einfach in das Restaurant.</p>
             <p>»Brügge <span class="w3-tooltip w3-tag">sehen<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">gerichtete optische Wahrnehmung</span></span> ... und sterben?« läuft ab morgen in unserem Kino.</p>
+            <p>Durch die Gipfel <span class="w3-tooltip w3-tag">schien<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">Bewegung von Licht</span></span> bleiches Licht auf den Waldweg.</p>
+            <p>Sie versuchten, ihn zur vorderen Türschwelle zu <span class="w3-tooltip w3-tag">locken<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">mitausgedrückte geplante gerichtete Bewegung</span></span>.</p>
             `,
             `
             <p>Vor ihnen lag eine <span class="w3-tooltip w3-tag">riesige<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Größe des Raums</span></span> Halle.</p>
+            <p>Sie waren noch <span class="w3-tooltip w3-tag">250 Meter entfernt<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Entfernungsangabe</span></span>.</p>
+            <p><span class="w3-tooltip w3-tag">Über 250<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Mengenangabe bezüglich räumlicher Entitäten</span></span> Bäume wurden geplanzt.</p>
+            <p>Er dachte viel über die <span class="w3-tooltip w3-tag">schiere Masse der<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">Mengenangabe bezüglich räumlicher Entitäten</span></span> Schiffe nach.</p>
             `,
             `
             <p><span class="w3-tooltip w3-tag">Im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
@@ -384,10 +389,17 @@ function addEventListener_languageSelect() {
             <p>»In the <span class="w3-tooltip w3-tag">middle<span class="farbe-ort w3-text w3-small w3-tag w3-round w3-animate-opacity">abstract spatial point</span></span> of the table lay the lost book«, he read aloud from the middle of the book.</p>
             `,
             `
-            <p>In her dream she <span class="w3-tooltip w3-tag">walked<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directed movement</span></span> into the restaurant.</p>
-            <p>»I <span class="w3-tooltip w3-tag">see<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directed visual perception</span></span> you« opens in our theaters tomorrow.</p>
+            <p>In her dream she <span class="w3-tooltip w3-tag">walked<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional movement</span></span> into the restaurant.</p>
+            <p>»I <span class="w3-tooltip w3-tag">see<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional visual perception</span></span> you« opens in our theaters tomorrow.</p>
+            <p>Through the peaks, a pale light <span class="w3-tooltip w3-tag">shone<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional movement of light</span></span> on the forest path.</p>
+            <p>They tried to <span class="w3-tooltip w3-tag">lure<span class="farbe-bewegung w3-text w3-small w3-tag w3-round w3-animate-opacity">co-expressed planned directional movement</span></span> him to the front doorstep.</p>
             `,
-            '',
+            `
+            <p>In front of them was a <span class="w3-tooltip w3-tag">huge<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">size of the room</span></span> hall.</p>
+            <p>They were still <span class="w3-tooltip w3-tag">250 meters away<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of a distance</span></span>.</p>
+            <p><span class="w3-tooltip w3-tag">Over 250<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> trees were planted.</p>
+            <p>He thought a lot about the <span class="w3-tooltip w3-tag">sheer mass of<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> ships.</p>
+            `,
             '',
             ''
           ],
