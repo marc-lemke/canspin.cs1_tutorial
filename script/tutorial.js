@@ -169,6 +169,7 @@ function addEventListener_languageSelect() {
             `,
             `
             <p><span class="w3-tooltip w3-tag">Im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
+            <p>Sie schwebten <span class="w3-tooltip w3-tag">draußen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen außerhalb des Hauses</span></span> <span class="w3-tooltip w3-tag">oberhalb<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen oberhalb des Hauses</span></span> des Hauses.</p>
             `,
             `
             <p>Im Saal mit den Impressionisten blickte sie lange <span class="w3-tooltip w3-tag">auf<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung des Blicks</span></span> den Renoir.</p>
@@ -400,7 +401,10 @@ function addEventListener_languageSelect() {
             <p><span class="w3-tooltip w3-tag">Over 250<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> trees were planted.</p>
             <p>He thought a lot about the <span class="w3-tooltip w3-tag">sheer mass of<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> ships.</p>
             `,
-            '',
+            `
+            <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> the room with the Impressionists, she gazed at the Renoir for a long time.</p>
+            <p>They were floating <span class="w3-tooltip w3-tag">outside<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> the house.</p>
+            `,
             ''
           ],
           'annotation_classes': [
