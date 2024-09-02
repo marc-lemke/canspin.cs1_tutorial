@@ -169,10 +169,13 @@ function addEventListener_languageSelect() {
             `,
             `
             <p><span class="w3-tooltip w3-tag">Im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
-            <p>Sie schwebten <span class="w3-tooltip w3-tag">draußen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen außerhalb des Hauses</span></span> <span class="w3-tooltip w3-tag">oberhalb<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen oberhalb des Hauses</span></span> des Hauses.</p>
+            <p>Sie schwebten <span class="w3-tooltip w3-tag">draußen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen außerhalb des Hauses</span></span> <span class="w3-tooltip w3-tag">oberhalb<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen oberhalb des Hauses</span></span> des <span class="w3-tooltip w3-tag">westlichen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Teil westlich von anderen Teilen</span></span> Teils <span class="w3-tooltip w3-tag">des<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Teil im Haus</span></span> Hauses.</p>
+            <p>Es ist später Abend <span class="w3-tooltip w3-tag">im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert eine implizierte Beobachterposition im Wald</span></span> Wald <span class="w3-tooltip w3-tag">der<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Wald in der Stadt</span></span> Stadt.</p>
             `,
             `
             <p>Im Saal mit den Impressionisten blickte sie lange <span class="w3-tooltip w3-tag">auf<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung des Blicks</span></span> den Renoir.</p>
+            <p>Sie stieg <span class="w3-tooltip w3-tag">aus<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung zum Ausgangpunkt der Bewegung</span></span> Waggon 7 des Zuges.</p>
+            <p>Sie bogen <span class="w3-tooltip w3-tag">nach<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung der Bewegung</span></span> <span class="w3-tooltip w3-tag">Süden<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">richtungsangebendes Nomen ohne Artikel</span></span> ab.</p>
             `
           ],
           'annotation_classes': [
@@ -402,10 +405,15 @@ function addEventListener_languageSelect() {
             <p>He thought a lot about the <span class="w3-tooltip w3-tag">sheer mass of<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> ships.</p>
             `,
             `
-            <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> the room with the Impressionists, she gazed at the Renoir for a long time.</p>
-            <p>They were floating <span class="w3-tooltip w3-tag">outside<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">tba</span></span> the house.</p>
+            <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the person in the room</span></span> the room with the Impressionists, she gazed at the Renoir for a long time.</p>
+            <p>They were floating <span class="w3-tooltip w3-tag">outside<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons outside the house</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons above the house</span></span> the <span class="w3-tooltip w3-tag">western<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part to the west of other parts</span></span> part <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part in the house</span></span> the house.</p>
+            <p>It is late evening <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions an implied observer position in the forest</span></span> the forest <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the forest in the city</span></span> the city.</p>
             `,
-            ''
+            `
+            <p>In the room with the Impressionists, she gazed <span class="w3-tooltip w3-tag">at<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction of the gaze</span></span> the Renoir for a long time.</p>
+            <p>She got <span class="w3-tooltip w3-tag">out<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction to the starting point of the movement</span></span> of carriage 7 of the train.</p>
+            <p>They turned <span class="w3-tooltip w3-tag">south<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional noun without article</span></span>.</p>
+            `
           ],
           'annotation_classes': [
             [
