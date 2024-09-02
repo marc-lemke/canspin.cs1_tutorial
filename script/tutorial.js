@@ -137,13 +137,6 @@ function addEventListener_languageSelect() {
             'categories': 'Kategorien',
             'example': 'Beispieltext'
           },
-          'h3_headings': [
-            'Ort',
-            'Bewegung',
-            'Dimensionierung',
-            'Positionierung',
-            'Richtung'
-          ],
           'h4_headings': [
             'Annotationsklassen',
             'Annotieren'
@@ -177,6 +170,13 @@ function addEventListener_languageSelect() {
             <p>Sie stieg <span class="w3-tooltip w3-tag">aus<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung zum Ausgangpunkt der Bewegung</span></span> Waggon 7 des Zuges.</p>
             <p>Sie bogen <span class="w3-tooltip w3-tag">nach<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung der Bewegung</span></span> <span class="w3-tooltip w3-tag">Süden<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">richtungsangebendes Nomen ohne Artikel</span></span> ab.</p>
             `
+          ],
+          'annotation_categories': [
+            'Ort',
+            'Bewegung',
+            'Dimensionierung',
+            'Positionierung',
+            'Richtung'
           ],
           'annotation_classes': [
             [
@@ -374,13 +374,6 @@ function addEventListener_languageSelect() {
             'categories': 'Categories',
             'example': 'Example text'
           },
-          'h3_headings': [
-            'Place',
-            'Movement',
-            'Dimensioning',
-            'Positioning',
-            'Direction'
-          ],
           'h4_headings': [
             'Annotation classes',
             'Annotate'
@@ -414,6 +407,13 @@ function addEventListener_languageSelect() {
             <p>She got <span class="w3-tooltip w3-tag">out<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction to the starting point of the movement</span></span> of carriage 7 of the train.</p>
             <p>They turned <span class="w3-tooltip w3-tag">south<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional noun without article</span></span>.</p>
             `
+          ],
+          'annotation_categories': [
+            'Place',
+            'Movement',
+            'Dimensioning',
+            'Positioning',
+            'Direction'
           ],
           'annotation_classes': [
             [
@@ -616,7 +616,7 @@ function addEventListener_languageSelect() {
       // - h3 headings in categories > accordion
       const h3_headings = [...document.querySelectorAll('div[data-id="categories"] > .content > div[data-id="accordion"] > .w3-container > h3')];
       for (const [headingIndex, heading] of h3_headings.entries()) {
-        const _categorieNames = languageDict[clickedLanguageButton.id]['h3_headings'];
+        const _categorieNames = languageDict[clickedLanguageButton.id]['annotation_categories'];
         heading.childNodes[0].nodeValue = _categorieNames[headingIndex];
       }
       // list of all five accordion panels for following translations inside those panels
@@ -667,6 +667,10 @@ function addEventListener_languageSelect() {
         }
       }
       // - beispieltextBtns in example
+      const beispieltextBtns = [...document.querySelectorAll('div[data-id="beispieltextBtns"] > div[data-id^="beispieltextBtns_"]')];
+      for (const [beispieltextBtnIndex, beispieltextBtn] of beispieltextBtns.entries()) {
+        beispieltextBtn.textContent = languageDict[clickedLanguageButton.id]['annotation_categories'][beispieltextBtnIndex];
+      }
       // - p in example > .content > blockquote[data-id='beispieltextText'] (replace html and execute refreshBeispieltextDisplay to display current text example state)
 
       // footer
