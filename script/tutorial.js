@@ -224,43 +224,43 @@ function addEventListener_languageSelect() {
           'annotation_classes_infos': [
             [
               `
-              <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Container sind Räume oder Bereiche, in denen sich menschliche Figuren prototypischerweise aufhalten können.</li>
               <li>Container können sich bewegen <span class='inline-examples'>(»das <span class='w3-tag'>Taxi</span>«)</span>.</li>
               <li>Container können konkrete Grenzen haben <span class='inline-examples'>(»das <span class='w3-tag'>Schloss</span>«)</span> oder auch diffuse <span class='inline-examples'>(»der <span class='w3-tag'>Berggipfel</span>«)</span>.</li>
               <li>Die annotierten Nomen können individuelle Orte, Gattungen <span class='inline-examples'>(»eine <span class='w3-tag'>Stadt</span>«)</span> oder mehrere Orte <span class='inline-examples'>(»viele <span class='w3-tag'>Städte</span>«)</span> bezeichnen.</li>
               `,
               `
-              <li>Container sind Räume oder Bereiche, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Container sind Räume oder Bereiche, in denen sich menschliche Figuren prototypischerweise aufhalten können.</li>
               <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»in den <span class='w3-tag'>Wald</span> laufen«)</span>.</li>
               <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»in den Wald <span class='w3-tag'>laufen</span>«)</span>.</li>
               <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
               `,
               `
-              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich menschliche Figuren prototypischerweise aufhalten können.</li>
               <li><b>Mit der Klasse <i>ORT-OBJEKT</i> annotieren wir ausschließlich geografische, astronomische oder raumstrukturelle Objekte.</b></li>
               <li>Geografische Objekte sind Objekte, die auf Welt-, Land- und Stadtkarten auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Schiller-Statue</span>«)</span>.</li>
               <li>Astronomische Objekte sind Objekte, die in Sternenkarten und auf Himmelsgloben auftauchen können <span class='inline-examples'>(»<span class='w3-tag'>Mond</span>«)</span>.</li>
               <li>Raumstrukturelle Objekte sind Objekte, die die Grenzen eines Raumes markieren <span class='inline-examples'>(»<span class='w3-tag'>Tür</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Zimmerdecke</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>Wände</span>«)</span>.</li>
-              <li>Jedes annotierte Objekt muss zu einem Container gehören, in dem sich auch Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt, die Tür eines Autos schon.</li>
+              <li>Jedes annotierte Objekt muss zu einem Container gehören, in dem sich auch menschliche Figuren prototypischerweise aufhalten können: Der Verschluss einer Handtasche zählt daher nicht als raumstrukturelles Objekt, die Tür eines Autos schon.</li>
               `,
               `
-              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich Figuren prototypischerweise aufhalten können.</li>
+              <li>Objekte haben räumliche Ausdehnung, sind aber keine Container, in denen sich menschliche Figuren prototypischerweise aufhalten können.</li>
               <li><b>Mit der Klasse <i>ORT-OBJEKT-BK</i> annotieren wir, im Gegensatz zur Klasse <i>ORT-OBJEKT</i>, alle Arten von Objekten</b>, die unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sind <span class='inline-examples'>(»auf das <span class='w3-tag'>Gemälde</span> zugehen«)</span>.</li>
               <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»auf das Gemälde <span class='w3-tag'>zugehen</span>«)</span>.</li>
               <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
-              <li>Jedes annotierte Objekt muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können: Das angeschaute Gemälde in einem Ausstellungsraum wird annotiert, das Gemälde in einer Tasche nicht.</li>
+              <li>Jedes annotierte Objekt muss sich in einem Container befinden, in dem sich auch menschliche Figuren prototypischerweise aufhalten können: Das angeschaute Gemälde in einem Ausstellungsraum wird annotiert, das Gemälde in einer Tasche nicht.</li>
               `,
               `
               <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
               <li>Beispiele: <span class='inline-examples'>»die <span class='w3-tag'>Mitte</span> des Saales«</span>, <span class='inline-examples'>»alle vier <span class='w3-tag'>Ecken</span> des Zimmers«</span>, <span class='inline-examples'>»<span class='w3-tag'>Nordpol</span>«</span>, <span class='inline-examples'>»an dieser <span class='w3-tag'>Stelle</span> im Raum«</span>, <span class='inline-examples'>»sie fuhren im <span class='w3-tag'>Kreis</span>«</span>.</li>
-              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können.</li>
+              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch menschliche Figuren prototypischerweise aufhalten können.</li>
               `,
               `
               <li>Abstrakta haben im Gegensatz zu Containern und Objekten keine räumliche Ausdehnung, sondern sind Bezeichnungen für Punkte oder geometrische Figuren.</li>
               <li>Sie können unbewegter Ziel- und Ausgangspunkt von gerichteten Bewegungen in einem <b>Bewegungskontext (BK)</b> sein <span class='inline-examples'>(»zur besagten <span class='w3-tag'>Stelle</span> laufen«)</span>.</li>
               <li>Damit ein Bewegungskontext vorliegt, muss sich eine annotierte Bewegung im Kotext befinden <span class='inline-examples'>(»zur besagten Stelle <span class='w3-tag'>laufen</span>«)</span>.</li>
               <li>Eine Bewegung kann auch eine Wahrnehmung oder anderes sein: Siehe die Infos zur Bewegungskategorie.</li>
-              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch Figuren prototypischerweise aufhalten können.</li>
+              <li>Jedes annotierte Abstraktum muss sich in einem Container befinden, in dem sich auch menschliche Figuren prototypischerweise aufhalten können.</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
@@ -461,43 +461,43 @@ function addEventListener_languageSelect() {
           'annotation_classes_infos': [
             [
               `
-              <li>Containers are spaces or areas in which characters can prototypically reside.</li>
+              <li>Containers are spaces or areas in which human characters can prototypically reside.</li>
               <li>Containers can move <span class='inline-examples'>(»the <span class='w3-tag'>taxi</span>«)</span>.</li>
               <li>Containers can have specific boundaries <span class='inline-examples'>(»the <span class='w3-tag'>castle</span>«)</span> or diffuse <span class='inline-examples'>(»the <span class='w3-tag'>mountain top</span>«)</span>.</li>
               <li>The annotated nouns can denote individual places, genera <span class='inline-examples'>(»a <span class='w3-tag'>city</span>«)</span> or several places <span class='inline-examples'>(»many <span class='w3-tag'>cities</span>«)</span>.</li>
               `,
               `
-              <li>Containers are spaces or areas in which characters can prototypically reside.</li>
+              <li>Containers are spaces or areas in which human characters can prototypically reside.</li>
               <li>They can be the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to run into the <span class='w3-tag'>forest</span>«)</span>.</li>
               <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>run</span> into the forest«)</span>.</li>
               <li>A movement can also be a perception or something else: See the information on the movement category.</li>
               `,
               `
-              <li>Objects have spatial dimensions, but are not containers in which characters can prototypically reside.</li>
+              <li>Objects have spatial dimensions, but are not containers in which human characters can prototypically reside.</li>
               <li><b>With the class <i>PLACE-OBJECT</i> we only annotate geographical, astronomical or space-structural objects</b>.</li>
               <li>Geographical objects are objects that can appear on world, country and city maps <span class='inline-examples'>(»<span class='w3-tag'>Schiller statue</span>«)</span>.</li>
               <li>Astronomical objects are objects that can appear on star charts and celestial globes <span class='inline-examples'>(»<span class='w3-tag'>Moon</span>«)</span>.</li>
               <li>Space-structural objects are objects that mark the boundaries of a room or area <span class='inline-examples'>(»<span class='w3-tag'>door</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>ceiling</span>«</span>, <span class='inline-examples'>»<span class='w3-tag'>walls</span>«)</span>.</li>
-              <li>Every annotated object must belong to a container in which characters can prototypically reside: The clasp of a handbag therefore does not count as a space-structural object, but the door of a car does.</li>
+              <li>Every annotated object must belong to a container in which human characters can prototypically reside: The clasp of a handbag therefore does not count as a space-structural object, but the door of a car does.</li>
               `,
               `
-              <li>Objects have spatial dimensions, but are not containers in which characters can prototypically reside.</li>
+              <li>Objects have spatial dimensions, but are not containers in which human characters can prototypically reside.</li>
               <li><b>With the class <i>PLACE-OBJECT-MC</i> we annotate, in contrast to the class <i>PLACE-OBJECT</i>, all types of objects</b> that are the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to move towards the <span class='w3-tag'>painting</span>«)</span>.</li>
               <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>move</span> towards the painting«)</span>.</li>
               <li>A movement can also be a perception or something else: See the information on the movement category.</li>
-              <li>Each annotated object must be located in a container in which characters can prototypically reside: The painting viewed in an exhibition room is annotated, the painting in a bag is not.</li>
+              <li>Each annotated object must be located in a container in which human characters can prototypically reside: The painting viewed in an exhibition room is annotated, the painting in a bag is not.</li>
               `,
               `
               <li>In contrast to containers and objects, abstracts have no spatial extension, but are designations for points or geometric figures.</li>
               <li>Examples: <span class='inline-examples'>»the <span class='w3-tag'>center</span> of the room«</span>, <span class='inline-examples'>»all four <span class='w3-tag'>corners</span> of the room«</span>, <span class='inline-examples'>»<span class='w3-tag'>North Pole</span>«</span>, <span class='inline-examples'>»at this <span class='w3-tag'>point</span> in the room«</span>, <span class='inline-examples'>»the drove in <span class='w3-tag'>circles</span>«</span>.</li>
-              <li>Each annotated abstract must be located in a container in which characters can prototypically reside.</li>
+              <li>Each annotated abstract must be located in a container in which human characters can prototypically reside.</li>
               `,
               `
               <li>In contrast to containers and objects, abstracts have no spatial extension, but are designations for points or geometric figures.</li>
               <li>They can be the unmoved destination and starting point of directed movements in a <b>movement context (MC)</b> <span class='inline-examples'>(»to run to the said <span class='w3-tag'>site</span>«)</span>.</li>
               <li>For a movement context to exist, there must be an annotated movement in the co-text <span class='inline-examples'>(»to <span class='w3-tag'>run</span> to the said site«)</span>.</li>
               <li>A movement can also be a perception or something else: See the information on the movement category.</li>
-              <li>Each annotated abstract must be located in a container in which characters can prototypically reside.</li>
+              <li>Each annotated abstract must be located in a container in which human characters can prototypically reside.</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
