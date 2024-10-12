@@ -318,13 +318,28 @@ function addEventListener_languageSelect() {
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
               `
             ],
             [
