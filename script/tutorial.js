@@ -285,19 +285,37 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Bewegungen von Subjekten sind gerichtete Bewegungen, die von Personen ausgeführt werden.</li>
+              <li>Diese Bewegungen können beabsichtigt sein <span class='inline-examples'>(»sie <span class='w3-tag'>spazierte</span> durch die Stadt«)</span>.</li>
+              <li>Sie können aber auch ohne Intention vonstattengehen <span class='inline-examples'>(»er <span class='w3-tag'>fiel</span> der Länge nach <span class='w3-tag'>hin</span>«)</span>.</li>
+              <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»plötzlich <span class='w3-tag'>bremste</span> der Fahrer«)</span>.</li>
               `,
               `
-              
+              <li>Bewegungen von Objekten sind gerichtete Bewegung, die die Bewegung eines Objekts beschreiben <span class='inline-examples'>(»der Felsen <span class='w3-tag'>stürzte</span> in die Tiefe«)</span>.</li>
+              <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»schließlich <span class='w3-tag'>blieb</span> der Felsbrocken noch vor dem Abgrund <span class='w3-tag'>liegen</span>«)</span>.</li>
               `,
               `
-              
+              <li>Bewegungen von Licht sind Verben, die einerseits das Scheinen von Licht beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»die Lampe <span class='w3-tag'>erhellte</span> jede Ecke des Zimmers«)</span>.</li>
+              <li>Andererseits sind auch Verben der optischen Wahrnehmung gemeint <span class='inline-examples'>(»sie <span class='w3-tag'>schaute</span> über die Menschen <span class='w3-tag'>hinweg</span>«)</span>.</li>
+              <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>brannte</span> im Kamin«)</span>.</li>
+              <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              
+              <li>Bewegungen von Schall sind Verben, die einerseits das Produzieren von Geräuschen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»er <span class='w3-tag'>fragte</span>: 'Wann?'«)</span>.</li>
+              <li>Andererseits sind auch Verben der akustischen Wahrnehmung gemeint <span class='inline-examples'>(»sie <span class='w3-tag'>hörten</span> dem Gesang noch eine Weile <span class='w3-tag'>zu</span>«)</span>.</li>
+              <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>knisterte</span> im Kamin«)</span>.</li>
+              <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              
+              <li>Bewegungen von Geruch sind Verben, die einerseits das Produzieren von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»der Käse <span class='w3-tag'>verbreitete</span> einen furchtbaren Gestank«)</span>.</li>
+              <li>Andererseits sind auch Verben der olfaktischen Wahrnehmung gemeint <span class='inline-examples'>(»es <span class='w3-tag'>roch</span> nach Rosen und Flieder«)</span>.</li>
+              <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>qualmte</span> im Kamin«)</span>.</li>
+              <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
               
@@ -522,10 +540,16 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Subject movements are directed movements that are carried out by persons.</li>
+              <li>These movements may be intentional <span class='inline-examples'>(»she was <span class='w3-tag'>walking</span> through the city«)</span>.</li>
+              <li>They can also happen unintentionally, though <span class='inline-examples'>(»he <span class='w3-tag'>fell</span> lengthwise«)</span>.</li>
+              <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»suddenly, the driver <span class='w3-tag'>braked</span>«)</span>.</li>
               `,
               `
-              
+              <li>Object movements are directional movements that describe the movement of an object <span class='inline-examples'>(»the rock <span class='w3-tag'>plunged</span> into the depths«)</span>.</li>
+              <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»finally, the rock <span class='w3-tag'>stopped</span> just short of the cliff«)</span>.</li>
               `,
               `
               
