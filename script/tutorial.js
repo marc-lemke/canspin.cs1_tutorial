@@ -311,7 +311,7 @@ function addEventListener_languageSelect() {
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              <li>Bewegungen von Geruch sind Verben, die einerseits das Produzieren von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»der Käse <span class='w3-tag'>verbreitete</span> einen furchtbaren Gestank«)</span>.</li>
+              <li>Bewegungen von Geruch sind Verben, die einerseits das Verbreiten von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»der Käse <span class='w3-tag'>verbreitete</span> einen furchtbaren Gestank«)</span>.</li>
               <li>Andererseits sind auch Verben der olfaktischen Wahrnehmung gemeint <span class='inline-examples'>(»es <span class='w3-tag'>roch</span> nach Rosen und Flieder«)</span>.</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>qualmte</span> im Kamin«)</span>.</li>
@@ -320,26 +320,22 @@ function addEventListener_languageSelect() {
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
-              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'>Der Mond <span class='w3-tag'>sang</span> mir das Lied meiner Kindheit.«</span></li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'>Der Anblick <span class='w3-tag'>brachte</span> mir die Situation von damals in Erinnerung.«</span></li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Das <span class='w3-tag'>klingt</span> wie der Titel eines Action-Films.«</span></li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
-              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Die Übertragung kann kreativ-metonymisch sein: »<span class='inline-examples'>Sie <span class='w3-tag'>schummelten</span> sich durch das Labyrinth.«</span></li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
-              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
-              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'><span class='w3-tag'></span>.«</span></li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'>Leise <span class='w3-tag'>wispert</span> das Laub des Waldes.«</span></li>
+              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'>Mit letzter Kraft <span class='w3-tag'>hechelte</span> er durch die Ziellinie.«</span></li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'>Dieser Weg <span class='w3-tag'>führt</span> bis zu den Toren der Stadt.«</span></li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Er <span class='w3-tag'>schlug</span> das Buch <span class='w3-tag'>auf</span>.«</span> (Ursprünglich für: Öffnen der Messing-Schließen mittelalterlicher Bücher durch Draufschlagen)</li>
               `
             ],
             [
@@ -567,22 +563,45 @@ function addEventListener_languageSelect() {
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»finally, the rock <span class='w3-tag'>stopped</span> just short of the cliff«)</span>.</li>
               `,
               `
-              
+              <li>Movements of light are verbs that describe the shining of light and thus express a directed movement <span class='inline-examples'>(»the lamp <span class='w3-tag'>illuminated</span> every corner of the room«)</span>.</li>
+              <li>On the other hand, also verbs of optical perception are considered <span class='inline-examples'>(»she <span class='w3-tag'>looked out</span> over the people«)</span>.</li>
+              <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire was <span class='w3-tag'>burning</span> in the fireplace«)</span>.</li>
+              <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
-              
+              <li>Sound movements are verbs that describe the production of sounds on the one hand and thus express a directional movement. <span class='inline-examples'>(»he <span class='w3-tag'>asked</span>: 'When?'«)</span>.</li>
+              <li>On the other hand, also verbs of acoustic perception are considered <span class='inline-examples'>(»they <span class='w3-tag'>listened</span> to the singing for a while longer«)</span>.</li>
+              <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire <span class='w3-tag'>crackled</span> in the fireplace«)</span>.</li>
+              <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
-              
+              <li>Odor movements are verbs that describe the spreading of odors on the one hand and thus express a directed movement <span class='inline-examples'>(»the cheese <span class='w3-tag'>gave off</span> a terrible smell«)</span>.</li>
+              <li>On the other hand, also verbs of olfactory perception are considered <span class='inline-examples'>(»it <span class='w3-tag'>smelled</span> of roses and lilaces«)</span>.</li>
+              <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire was <span class='w3-tag'>smoking</span> in the fireplace«)</span>.</li>
+              <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li>The transferred use can be creative-metaphorical: »<span class='inline-examples'>The moon <span class='w3-tag'>sang</span> me the song of my childhood.«</span></li>
+              <li>It can be idiomatic-metaphorical: »<span class='inline-examples'>The sight <span class='w3-tag'>brought back</span> memories of the situation at the time.«</span></li>
+              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>That <span class='w3-tag'>sounds</span> like the title of an action movie.«</span></li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
+              <li>The transferred use can be creative-metonymic: »<span class='inline-examples'>They <span class='w3-tag'>cheated</span> their way through the maze.«</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
+              <li>The transferred use can be creative-metaphorical: »<span class='inline-examples'>The leaves of the forest <span class='w3-tag'>whisper</span> softly.«</span></li>
+              <li>It can be creative-metonymic: »<span class='inline-examples'>With his last ounce of strength, he <span class='w3-tag'>panted</span> across the finish line.«</span></li>
+              <li>It can be idiomatic-metaphorical: »<span class='inline-examples'>This road <span class='w3-tag'>leads to</span> the city gates.«</span></li>
+              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>He <span class='w3-tag'>flipped open</span> the book.«</span> (Originally the German term 'aufschlagen' for: opening the brass clasps of medieval books by hitting them)</li>
               `
             ],
             [
