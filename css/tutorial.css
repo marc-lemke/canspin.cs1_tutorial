@@ -183,3 +183,11 @@ div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
   min-width: 100px;
   border: 2px solid black;
 }
+
+/* Media Queries */
+/* hint: most Media Queries are controlled via JS, see script/tutorial.js */
+@media (max-width: 500px) {
+  .inline-examples {
+    white-space: normal!important;
+  }
+}

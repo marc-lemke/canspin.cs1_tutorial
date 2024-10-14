@@ -798,6 +798,9 @@ function addEventListener_mediaQueries() {
       exampleTextParagraph.classList.remove('w3-large');
       exampleTextReferenceParagraph.classList.add('w3-small');
     }
+
+    // inline-examples
+    //// hint: is controlled in tutorial css, see css/tutorial.css
   }
 
   ['load', 'resize'].forEach(function(value) {
