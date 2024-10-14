@@ -290,11 +290,13 @@ function addEventListener_languageSelect() {
               <li>Sie können aber auch ohne Intention vonstattengehen (»<span class='inline-examples'>er <span class='w3-tag'>fiel</span></span> der Länge <span class='inline-examples'>nach <span class='w3-tag'>hin</span></span>«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»<span class='inline-examples'>plötzlich <span class='w3-tag'>bremste</span></span> der Fahrer«).</li>
+              <li>Auch Partizipien drücken Bewegungen aus oder zwingend mit aus (»<span class='inline-examples'>hinter <span class='w3-tag'>vorgehaltener</span></span> Hand«).</li>
               `,
               `
               <li>Bewegungen von Objekten sind gerichtete Bewegung, die die Bewegung eines Objekts beschreiben (»der <span class='inline-examples'>Felsen <span class='w3-tag'>stürzte</span></span> in die Tiefe«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»<span class='inline-examples'>schließlich <span class='w3-tag'>blieb</span></span> der Felsbrocken noch vor dem <span class='inline-examples'>Abgrund <span class='w3-tag'>liegen</span></span>«).</li>
+              <li>Auch Partizipien drücken Bewegungen aus oder zwingend mit aus (»<span class='inline-examples'>zig <span class='w3-tag'>herunterstürzende</span></span> Felsbrocken«).</li>
               `,
               `
               <li>Bewegungen von Licht sind Verben, die einerseits das Scheinen von Licht beschreiben und damit eine gerichtete Bewegung ausdrücken (»die <span class='inline-examples'>Lampe <span class='w3-tag'>erhellte</span></span> jede Ecke des Zimmers«).</li>
@@ -302,6 +304,7 @@ function addEventListener_languageSelect() {
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>brannte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
+              <li>Auch Partizipien drücken Bewegungen aus oder zwingend mit aus (»unter einer <span class='inline-examples'>hell <span class='w3-tag'>scheinenden</span></span> Sonne«).</li>
               `,
               `
               <li>Bewegungen von Schall sind Verben, die einerseits das Produzieren von Geräuschen beschreiben und damit eine gerichtete Bewegung ausdrücken (»<span class='inline-examples'>er <span class='w3-tag'>fragte</span></span>: 'Wann?'«).</li>
@@ -309,6 +312,7 @@ function addEventListener_languageSelect() {
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>knisterte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
+              <li>Auch Partizipien drücken Bewegungen aus oder zwingend mit aus (»der <span class='inline-examples'>soeben <span class='w3-tag'>gerammte</span></span> Pfeiler rührte sich nicht«).</li>
               `,
               `
               <li>Bewegungen von Geruch sind Verben, die einerseits das Verbreiten von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken (»der <span class='inline-examples'>Käse <span class='w3-tag'>verbreitete</span></span> einen furchtbaren Gestank«).</li>
@@ -316,6 +320,7 @@ function addEventListener_languageSelect() {
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
               <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>qualmte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
+              <li>Auch Partizipien drücken Bewegungen aus oder zwingend mit aus (»<span class='inline-examples'>die <span class='w3-tag'>duftenden</span></span> Rosen«).</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
@@ -340,22 +345,32 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Ein die Größe dimensionierender Ausdruck verweist direkt auf die Größe oder Ausdehnung von räumlichen Entitäten (»<span class='inline-examples'><span class='w3-tag'>breites</span></span> Auto«, »<span class='inline-examples'><span class='w3-tag'>kleiner</span></span> Bereich«, »<span class='inline-examples'><span class='w3-tag'>zierliches</span></span> Fräulein«, »<span class='inline-examples'><span class='w3-tag'>endlose</span></span> Prärie«).</li>
+              <li>Auch Phrasen mit oder ohne Verbalkern können eine dimensionierende Funktion haben und werden dann als Dimensionierung annotiert (»Die Weizenfelder <span class='inline-examples'>lagen <span class='w3-tag'>in ihrer unüberschaubaren Größe</span></span> vor ihr.«, »Dieser Raum, <span class='inline-examples'>scheinbar <span class='w3-tag'>das gesamte Schloss ausfüllend</span></span>, war wahrscheinlich Ort opulenter Feste gewesen.«).</li>
               `,
               `
-              
+              <li>Ein die Menge räumlicher Entitäten angebender Ausdruck verweist indirekt auf die Ausdehnung der räumlichen Entitäten, die sie zusammengenommen haben (»<span class='inline-examples'><span class='w3-tag'>32</span></span>Räder befanden sich noch im Lager.«).</li>
+              <li>Es müssen mindestens zwei Entitäten zur Menge gehören, da in vielen Fällen nicht zwischen Mengenangabe und Klassenzugehörigkeit unterschieden werden kann (»Sie sahen ein Auto.«, »Sie sahen <span class='inline-examples'>zwei <span class='w3-tag'>Autos</span></span>.«).</li>
+              <li>Auch Phrasen mit oder ohne Verbalkern können eine dimensionierende Funktion haben und werden dann als Dimensionierung annotiert (»Durch <span class='inline-examples'>die <span class='w3-tag'>Masse von</span></span> Bäumen war ihnen der Weg versperrt.«).</li>
               `,
               `
-              
+              <li>Ein einen Abstand angebender Ausdruck verweist direkt auf den Abstand zwischen zwei räumlichen Entitäten (»Bis zum Gipfel waren <span class='inline-examples'>es <span class='w3-tag'>250 Meter</span></span>.«).</li>
+              <li>Auch Phrasen mit oder ohne Verbalkern können eine dimensionierende Funktion haben und werden dann als Dimensionierung annotiert (»Und <span class='inline-examples'><span class='w3-tag'>kaum eine Tagreise entfernt</span></span> erblühen Universitäten.«).</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »Das <span class='inline-examples'>waren <span class='w3-tag'>höchst</span></span> unerfreuliche Nachrichten.«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
+              <li>Die Übertragung kann kreativ-metonymisch sein: »Die Stadt <span class='inline-examples'>lag <span class='w3-tag'>wenige Wegstunden entfernt</span></span> von ihnen.«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
+              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »Die Zahl der täglichen Besucher ist inzwischen <span class='inline-examples'>so <span class='w3-tag'>groß</span></span> geworden.«</li>
               `
             ],
             [
@@ -556,11 +571,13 @@ function addEventListener_languageSelect() {
               <li>They can also happen unintentionally, though (»<span class='inline-examples'>he <span class='w3-tag'>fell</span></span> lengthwise«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»suddenly, the <span class='inline-examples'>driver <span class='w3-tag'>braked</span></span>«).</li>
+              <li>Participles also express or co-express movement (»behind <span class='inline-examples'><span class='w3-tag'>closed</span></span> doors«).</li>
               `,
               `
               <li>Object movements are directional movements that describe the movement of an object (»the <span class='inline-examples'>rock <span class='w3-tag'>plunged</span></span> into the depths«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»finally, the <span class='inline-examples'>rock <span class='w3-tag'>stopped</span></span> just short of the cliff«).</li>
+              <li>Participles also express or co-express movement (»dozens of <span class='inline-examples'><span class='w3-tag'>falling</span></span> rocks«).</li>
               `,
               `
               <li>Movements of light are verbs that describe the shining of light and thus express a directed movement (»the <span class='inline-examples'>lamp <span class='w3-tag'>illuminated</span></span> every corner of the room«).</li>
@@ -568,6 +585,7 @@ function addEventListener_languageSelect() {
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the fire <span class='inline-examples'>was <span class='w3-tag'>burning</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
+              <li>Participles also express or co-express movement (»under a bright <span class='inline-examples'><span class='w3-tag'>shining</span></span> sun«).</li>
               `,
               `
               <li>Sound movements are verbs that describe the production of sounds on the one hand and thus express a directional movement. (»<span class='inline-examples'>he <span class='w3-tag'>asked</span></span>: 'When?'«).</li>
@@ -575,6 +593,7 @@ function addEventListener_languageSelect() {
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the <span class='inline-examples'>fire <span class='w3-tag'>crackled</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
+              <li>Participles also express or co-express movement (»the recently <span class='inline-examples'><span class='w3-tag'>rammed</span></span> pillar did not move«).</li>
               `,
               `
               <li>Odor movements are verbs that describe the spreading of odors on the one hand and thus express a directed movement (»the <span class='inline-examples'>cheese <span class='w3-tag'>gave off</span></span> a terrible smell«).</li>
@@ -582,6 +601,7 @@ function addEventListener_languageSelect() {
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
               <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the fire <span class='inline-examples'>was <span class='w3-tag'>smoking</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
+              <li>Participles also express or co-express movement (»the <span class='inline-examples'><span class='w3-tag'>fragrant</span></span> roses«).</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
@@ -606,22 +626,32 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>A size dimensioning expression refers directly to the size or extent of spatial entities (»<span class='inline-examples'><span class='w3-tag'>wide</span></span> car«, »<span class='inline-examples'><span class='w3-tag'>small</span></span> area«, »<span class='inline-examples'><span class='w3-tag'>petite</span></span> young lady«, »<span class='inline-examples'><span class='w3-tag'>endless</span></span> prairie«).</li>
+              <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»The wheat fields lay before <span class='inline-examples'>her <span class='w3-tag'>in their immense vastness</span></span>.«, »This room, <span class='inline-examples'>apparently <span class='w3-tag'>filling the entire castle</span></span>, had probably been the site of opulent festivities.«).</li>
               `,
               `
-              
+              <li>An expression indicating the amount of spatial entities indirectly refers to the extent of the spatial entities they have taken together (»<span class='inline-examples'><span class='w3-tag'>32</span></span> wheels were still in the warehouse.«).</li>
+              <li>At least two entities must belong to the quantity, as in many cases it is not possible to differentiate between a quantity specification and class membership (»They saw a car.«, »They saw <span class='inline-examples'>two <span class='w3-tag'>cars</span></span>.«).</li>
+              <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»Their way was blocked by <span class='inline-examples'>the <span class='w3-tag'>mass of</span></span> trees.«).</li>
               `,
               `
-              
+              <li>An expression specifying a distance refers directly to the distance between two spatial entities (»It <span class='inline-examples'>was <span class='w3-tag'>250 meters</span></span> to the summit.«).</l>
+              <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»And <span class='inline-examples'><span class='w3-tag'>hardly a day's journey away</span></span>, universities are blossoming.«).</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li>The transferred use can be idiomatic-metaphorical: »That <span class='inline-examples'>was <span class='w3-tag'>highly</span></span> unpleasant news.«</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
+              <li>The transferred use can be creative-metonymic: »The city <span class='inline-examples'>was <span class='w3-tag'>a few hours away</span></span> from them.«</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
+              <li>The transferred use can be idiomatic-metaphorical: »The number of daily visitors has now become <span class='inline-examples'>so <span class='w3-tag'>large</span></span>.«</li>
               `
             ],
             [
