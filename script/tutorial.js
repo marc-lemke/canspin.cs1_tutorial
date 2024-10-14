@@ -375,16 +375,24 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Positionierungen drücken die räumliche Relation zwischen zwei räumlichen Entitäten aus (»er befand <span class='inline-examples'>sich <span class='w3-tag'>im</span></span> Innenhof«, »sie <span class='inline-examples'>schwebten <span class='w3-tag'>draußen</span></span> <span class='inline-examples'><span class='w3-tag'>oberhalb</span></span> des Hauses«).</li>
+              <li>Eine der Entitäten kann dabei implizit bleiben (»<span class='inline-examples'>das <span class='w3-tag'>linke</span></span> Zimmer« positioniert das Zimmer links von einem implizierten rechten Zimmer; in »Es war später <span class='inline-examples'>Abend <span class='w3-tag'>im</span></span> Wald« wird eine implizite Beobachterposition im Stadtwald positioniert.).</li>
+              <li>Auch Teil-Ganzes-Relationen werden als Positionierungen gewertet, wenn beide Bestandteile der Relation Orte sind (»dies ist der größte <span class='inline-examples'>Wald <span class='w3-tag'>unserer</span></span> Stadt«).</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'>Darin</span></span> liegt das Problem.«, »Das machte <span class='inline-examples'>sie <span class='w3-tag'>in</span></span> weiten Kreisen bekannt.«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »in einer <span class='inline-examples'>Ecke <span class='w3-tag'>meines</span></span> Bewusstseins«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
+              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Endlich kam <span class='inline-examples'>er <span class='w3-tag'>auf</span></span> seinem Zimmer an.«</li>
               `
             ],
             [
@@ -656,16 +664,24 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Positionings express the spatial relation between two spatial entities (»he was <span class='inline-examples'>in <span class='w3-tag'>the</span></span> courtyard«, »they were <span class='inline-examples'>floating <span class='w3-tag'>outside</span></span> <span class='inline-examples'><span class='w3-tag'>above</span></span> the house«).</li>
+              <li>One of the entities can remain implicit (»<span class='inline-examples'>the <span class='w3-tag'>left</span></span> room« positions the room to the left of an implicit right room; in »It was late <span class='inline-examples'>evening <span class='w3-tag'>in </span></span> the forest« an implicit observer position is placed in the city forest).</li>
+              <li>Partial-whole relationships are also considered to be positionings if both constituents of the relationship are places (»this is the largest <span class='inline-examples'>forest <span class='w3-tag'>of our</span></span> city«).</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li>The transferred use can be idiomatic-metaphorical: »<span class='inline-examples'><span class='w3-tag'>Therein</span></span> lies the problem.«, »This made her well <span class='inline-examples'>known <span class='w3-tag'>in</span></span> wide circles.«</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
+              <li>The transferred use can be creative-metaphoric: »in a <span class='inline-examples'>corner <span class='w3-tag'>of my</span></span> mind«.</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
+              <li>The transferred use can be idiomatic-metonymic: »Finally, he <span class='inline-examples'>arrived <span class='w3-tag'>on</span></span> his room.«</li>
               `
             ],
             [
