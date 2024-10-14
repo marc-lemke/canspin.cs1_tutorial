@@ -286,56 +286,56 @@ function addEventListener_languageSelect() {
             [
               `
               <li>Bewegungen von Subjekten sind gerichtete Bewegungen, die von Personen ausgeführt werden.</li>
-              <li>Diese Bewegungen können beabsichtigt sein <span class='inline-examples'>(»sie <span class='w3-tag'>spazierte</span> durch die Stadt«)</span>.</li>
-              <li>Sie können aber auch ohne Intention vonstattengehen <span class='inline-examples'>(»er <span class='w3-tag'>fiel</span> der Länge nach <span class='w3-tag'>hin</span>«)</span>.</li>
+              <li>Diese Bewegungen können beabsichtigt sein (»<span class='inline-examples'>sie <span class='w3-tag'>spazierte</span></span> durch die Stadt«).</li>
+              <li>Sie können aber auch ohne Intention vonstattengehen (»<span class='inline-examples'>er <span class='w3-tag'>fiel</span></span> der Länge <span class='inline-examples'>nach <span class='w3-tag'>hin</span></span>«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
-              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»plötzlich <span class='w3-tag'>bremste</span> der Fahrer«)</span>.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»<span class='inline-examples'>plötzlich <span class='w3-tag'>bremste</span></span> der Fahrer«).</li>
               `,
               `
-              <li>Bewegungen von Objekten sind gerichtete Bewegung, die die Bewegung eines Objekts beschreiben <span class='inline-examples'>(»der Felsen <span class='w3-tag'>stürzte</span> in die Tiefe«)</span>.</li>
+              <li>Bewegungen von Objekten sind gerichtete Bewegung, die die Bewegung eines Objekts beschreiben (»der <span class='inline-examples'>Felsen <span class='w3-tag'>stürzte</span></span> in die Tiefe«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
-              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»schließlich <span class='w3-tag'>blieb</span> der Felsbrocken noch vor dem Abgrund <span class='w3-tag'>liegen</span>«)</span>.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»<span class='inline-examples'>schließlich <span class='w3-tag'>blieb</span></span> der Felsbrocken noch vor dem <span class='inline-examples'>Abgrund <span class='w3-tag'>liegen</span></span>«).</li>
               `,
               `
-              <li>Bewegungen von Licht sind Verben, die einerseits das Scheinen von Licht beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»die Lampe <span class='w3-tag'>erhellte</span> jede Ecke des Zimmers«)</span>.</li>
-              <li>Andererseits sind auch Verben der optischen Wahrnehmung gemeint <span class='inline-examples'>(»sie <span class='w3-tag'>schaute</span> über die Menschen <span class='w3-tag'>hinweg</span>«)</span>.</li>
+              <li>Bewegungen von Licht sind Verben, die einerseits das Scheinen von Licht beschreiben und damit eine gerichtete Bewegung ausdrücken (»die <span class='inline-examples'>Lampe <span class='w3-tag'>erhellte</span></span> jede Ecke des Zimmers«).</li>
+              <li>Andererseits sind auch Verben der optischen Wahrnehmung gemeint (»<span class='inline-examples'>sie <span class='w3-tag'>schaute</span></span> über die <span class='inline-examples'>Menschen <span class='w3-tag'>hinweg</span></span>«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
-              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>brannte</span> im Kamin«)</span>.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>brannte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              <li>Bewegungen von Schall sind Verben, die einerseits das Produzieren von Geräuschen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»er <span class='w3-tag'>fragte</span>: 'Wann?'«)</span>.</li>
-              <li>Andererseits sind auch Verben der akustischen Wahrnehmung gemeint <span class='inline-examples'>(»sie <span class='w3-tag'>hörten</span> dem Gesang noch eine Weile <span class='w3-tag'>zu</span>«)</span>.</li>
+              <li>Bewegungen von Schall sind Verben, die einerseits das Produzieren von Geräuschen beschreiben und damit eine gerichtete Bewegung ausdrücken (»<span class='inline-examples'>er <span class='w3-tag'>fragte</span></span>: 'Wann?'«).</li>
+              <li>Andererseits sind auch Verben der akustischen Wahrnehmung gemeint (»<span class='inline-examples'>sie <span class='w3-tag'>hörten</span></span> dem Gesang noch eine <span class='inline-examples'>Weile <span class='w3-tag'>zu</span></span>«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
-              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>knisterte</span> im Kamin«)</span>.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>knisterte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
-              <li>Bewegungen von Geruch sind Verben, die einerseits das Verbreiten von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken <span class='inline-examples'>(»der Käse <span class='w3-tag'>verbreitete</span> einen furchtbaren Gestank«)</span>.</li>
-              <li>Andererseits sind auch Verben der olfaktischen Wahrnehmung gemeint <span class='inline-examples'>(»es <span class='w3-tag'>roch</span> nach Rosen und Flieder«)</span>.</li>
+              <li>Bewegungen von Geruch sind Verben, die einerseits das Verbreiten von Gerüchen beschreiben und damit eine gerichtete Bewegung ausdrücken (»der <span class='inline-examples'>Käse <span class='w3-tag'>verbreitete</span></span> einen furchtbaren Gestank«).</li>
+              <li>Andererseits sind auch Verben der olfaktischen Wahrnehmung gemeint (»<span class='inline-examples'>es <span class='w3-tag'>roch</span></span> nach Rosen und Flieder«).</li>
               <li>Voneinander getrennte, zum Bewegungsverb gehörige Wörter werden im Satz zusammen als eine Bewegung annotiert.</li>
-              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert <span class='inline-examples'>(»das Feuer <span class='w3-tag'>qualmte</span> im Kamin«)</span>.</li>
+              <li>Verben, die eine gerichtete Bewegung zwar nicht direkt, aber zwingend mitausdrücken, werden auch als Bewegungen annotiert (»das <span class='inline-examples'>Feuer <span class='w3-tag'>qualmte</span></span> im Kamin«).</li>
               <li>Wenn ein Verb logisch mehrere Wahrnehmungsqualitäten ausdrückt, ist die prototypische Bedeutung zu beachten, wie sie sich aus einem Wörterbuchartikel zum entsprechenden Verb erschließen lässt.</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
-              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'>Der Mond <span class='w3-tag'>sang</span> mir das Lied meiner Kindheit.«</span></li>
-              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'>Der Anblick <span class='w3-tag'>brachte</span> mir die Situation von damals in Erinnerung.«</span></li>
-              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Das <span class='w3-tag'>klingt</span> wie der Titel eines Action-Films.«</span></li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »Der <span class='inline-examples'>Mond <span class='w3-tag'>sang</span></span> mir das Lied meiner Kindheit.«</li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »Der <span class='inline-examples'>Anblick <span class='w3-tag'>brachte</span></span> mir die Situation von damals in Erinnerung.«</li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Das <span class='w3-tag'>klingt</span></span> wie der Titel eines Action-Films.«</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
-              <li>Die Übertragung kann kreativ-metonymisch sein: »<span class='inline-examples'>Sie <span class='w3-tag'>schummelten</span> sich durch das Labyrinth.«</span></li>
+              <li>Die Übertragung kann kreativ-metonymisch sein: »<span class='inline-examples'>Sie <span class='w3-tag'>schummelten</span></span> sich durch das Labyrinth.«</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
-              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'>Leise <span class='w3-tag'>wispert</span> das Laub des Waldes.«</span></li>
-              <li>Sie kann kreativ-metonymisch sein: »<span class='inline-examples'>Mit letzter Kraft <span class='w3-tag'>hechelte</span> er durch die Ziellinie.«</span></li>
-              <li>Sie kann idiomatisch-metaphorisch sein: »<span class='inline-examples'>Dieser Weg <span class='w3-tag'>führt</span> bis zu den Toren der Stadt.«</span></li>
-              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Er <span class='w3-tag'>schlug</span> das Buch <span class='w3-tag'>auf</span>.«</span> (Ursprünglich für: Öffnen der Messing-Schließen mittelalterlicher Bücher durch Draufschlagen)</li>
+              <li>Die Übertragung kann kreativ-metaphorisch sein: »<span class='inline-examples'>Leise <span class='w3-tag'>wispert</span></span> das Laub des Waldes.«</li>
+              <li>Sie kann kreativ-metonymisch sein: »Mit letzter <span class='inline-examples'>Kraft <span class='w3-tag'>hechelte</span></span> er durch die Ziellinie.«</li>
+              <li>Sie kann idiomatisch-metaphorisch sein: »Dieser <span class='inline-examples'>Weg <span class='w3-tag'>führt</span></span> bis zu den Toren der Stadt.«</li>
+              <li>Sie kann idiomatisch-metonymisch sein: »<span class='inline-examples'>Er <span class='w3-tag'>schlug</span></span> das <span class='inline-examples'>Buch <span class='w3-tag'>auf</span></span>.« (Ursprünglich für: Öffnen der Messing-Schließen mittelalterlicher Bücher durch Draufschlagen)</li>
               `
             ],
             [
@@ -552,56 +552,56 @@ function addEventListener_languageSelect() {
             [
               `
               <li>Subject movements are directed movements that are carried out by persons.</li>
-              <li>These movements may be intentional <span class='inline-examples'>(»she was <span class='w3-tag'>walking</span> through the city«)</span>.</li>
-              <li>They can also happen unintentionally, though <span class='inline-examples'>(»he <span class='w3-tag'>fell</span> lengthwise«)</span>.</li>
+              <li>These movements may be intentional (»she <span class='inline-examples'>was <span class='w3-tag'>walking</span></span> through the city«).</li>
+              <li>They can also happen unintentionally, though (»<span class='inline-examples'>he <span class='w3-tag'>fell</span></span> lengthwise«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
-              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»suddenly, the driver <span class='w3-tag'>braked</span>«)</span>.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»suddenly, the <span class='inline-examples'>driver <span class='w3-tag'>braked</span></span>«).</li>
               `,
               `
-              <li>Object movements are directional movements that describe the movement of an object <span class='inline-examples'>(»the rock <span class='w3-tag'>plunged</span> into the depths«)</span>.</li>
+              <li>Object movements are directional movements that describe the movement of an object (»the <span class='inline-examples'>rock <span class='w3-tag'>plunged</span></span> into the depths«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
-              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»finally, the rock <span class='w3-tag'>stopped</span> just short of the cliff«)</span>.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»finally, the <span class='inline-examples'>rock <span class='w3-tag'>stopped</span></span> just short of the cliff«).</li>
               `,
               `
-              <li>Movements of light are verbs that describe the shining of light and thus express a directed movement <span class='inline-examples'>(»the lamp <span class='w3-tag'>illuminated</span> every corner of the room«)</span>.</li>
-              <li>On the other hand, also verbs of optical perception are considered <span class='inline-examples'>(»she <span class='w3-tag'>looked out</span> over the people«)</span>.</li>
+              <li>Movements of light are verbs that describe the shining of light and thus express a directed movement (»the <span class='inline-examples'>lamp <span class='w3-tag'>illuminated</span></span> every corner of the room«).</li>
+              <li>On the other hand, also verbs of optical perception are considered (»<span class='inline-examples'>she <span class='w3-tag'>looked out</span></span> over the people«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
-              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire was <span class='w3-tag'>burning</span> in the fireplace«)</span>.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the fire <span class='inline-examples'>was <span class='w3-tag'>burning</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
-              <li>Sound movements are verbs that describe the production of sounds on the one hand and thus express a directional movement. <span class='inline-examples'>(»he <span class='w3-tag'>asked</span>: 'When?'«)</span>.</li>
-              <li>On the other hand, also verbs of acoustic perception are considered <span class='inline-examples'>(»they <span class='w3-tag'>listened</span> to the singing for a while longer«)</span>.</li>
+              <li>Sound movements are verbs that describe the production of sounds on the one hand and thus express a directional movement. (»<span class='inline-examples'>he <span class='w3-tag'>asked</span></span>: 'When?'«).</li>
+              <li>On the other hand, also verbs of acoustic perception are considered (»<span class='inline-examples'>they <span class='w3-tag'>listened</span></span> to the singing for a while longer«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
-              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire <span class='w3-tag'>crackled</span> in the fireplace«)</span>.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the <span class='inline-examples'>fire <span class='w3-tag'>crackled</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
-              <li>Odor movements are verbs that describe the spreading of odors on the one hand and thus express a directed movement <span class='inline-examples'>(»the cheese <span class='w3-tag'>gave off</span> a terrible smell«)</span>.</li>
-              <li>On the other hand, also verbs of olfactory perception are considered <span class='inline-examples'>(»it <span class='w3-tag'>smelled</span> of roses and lilaces«)</span>.</li>
+              <li>Odor movements are verbs that describe the spreading of odors on the one hand and thus express a directed movement (»the <span class='inline-examples'>cheese <span class='w3-tag'>gave off</span></span> a terrible smell«).</li>
+              <li>On the other hand, also verbs of olfactory perception are considered (»<span class='inline-examples'>it <span class='w3-tag'>smelled</span></span> of roses and lilaces«).</li>
               <li>Separate words that belong to the same verb, which can occur in German, are annotated together as one movement in the sentence.</li>
-              <li>Verbs that necessarily co-express a directional movement are also annotated as movements <span class='inline-examples'>(»the fire was <span class='w3-tag'>smoking</span> in the fireplace«)</span>.</li>
+              <li>Verbs that necessarily co-express a directional movement are also annotated as movements (»the fire <span class='inline-examples'>was <span class='w3-tag'>smoking</span></span> in the fireplace«).</li>
               <li>When a verb logically expresses several perceptual qualities, the prototypical meaning is to be considered, as can be inferred from a dictionary article on the corresponding verb.</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
               <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
-              <li>The transferred use can be creative-metaphorical: »<span class='inline-examples'>The moon <span class='w3-tag'>sang</span> me the song of my childhood.«</span></li>
-              <li>It can be idiomatic-metaphorical: »<span class='inline-examples'>The sight <span class='w3-tag'>brought back</span> memories of the situation at the time.«</span></li>
-              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>That <span class='w3-tag'>sounds</span> like the title of an action movie.«</span></li>
+              <li>The transferred use can be creative-metaphorical: »The <span class='inline-examples'>moon <span class='w3-tag'>sang</span></span> me the song of my childhood.«</li>
+              <li>It can be idiomatic-metaphorical: »The <span class='inline-examples'>sight <span class='w3-tag'>brought back</span></span> memories of the situation at the time.«</li>
+              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>That <span class='w3-tag'>sounds</span></span> like the title of an action movie.«</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
               <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
-              <li>The transferred use can be creative-metonymic: »<span class='inline-examples'>They <span class='w3-tag'>cheated</span> their way through the maze.«</li>
+              <li>The transferred use can be creative-metonymic: »<span class='inline-examples'>They <span class='w3-tag'>cheated</span></span> their way through the maze.«</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
               <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
-              <li>The transferred use can be creative-metaphorical: »<span class='inline-examples'>The leaves of the forest <span class='w3-tag'>whisper</span> softly.«</span></li>
-              <li>It can be creative-metonymic: »<span class='inline-examples'>With his last ounce of strength, he <span class='w3-tag'>panted</span> across the finish line.«</span></li>
-              <li>It can be idiomatic-metaphorical: »<span class='inline-examples'>This road <span class='w3-tag'>leads to</span> the city gates.«</span></li>
-              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>He <span class='w3-tag'>flipped open</span> the book.«</span> (Originally the German term 'aufschlagen' for: opening the brass clasps of medieval books by hitting them)</li>
+              <li>The transferred use can be creative-metaphorical: »The leaves of the <span class='inline-examples'>forest <span class='w3-tag'>whisper</span></span> softly.«</li>
+              <li>It can be creative-metonymic: »With his last ounce of strength, <span class='inline-examples'>he <span class='w3-tag'>panted</span></span> across the finish line.«</li>
+              <li>It can be idiomatic-metaphorical: »This <span class='inline-examples'>road <span class='w3-tag'>leads to</span></span> the city gates.«</li>
+              <li>It can be idiomatic-metonymic: »<span class='inline-examples'>He <span class='w3-tag'>flipped open</span></span> the book.« (Originally the German term 'aufschlagen' for: opening the brass clasps of medieval books by hitting them)</li>
               `
             ],
             [
