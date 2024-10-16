@@ -411,7 +411,6 @@ function addEventListener_languageSelect() {
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
-              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span></span>.«</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
@@ -698,16 +697,23 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Directions are expressions that form a directional statement together with a verb (mostly <i>movements</i>: »<span class='inline-examples'><i>walk</i> <span class='w3-tag'>into</span></span> the city«) or as part of a noun phrase (»the <span class='inline-examples'>neighbor <span class='w3-tag'>from</span></span> upstairs«).</li>
+              <li>The directional information can stand alone in a sentence for one, so to speak, pointing into the void (»they <span class='inline-examples'>turned <span class='w3-tag'>south</span></span>«).</li>
+              <li>Or it is oriented towards a destination point or a starting point (»<span class='inline-examples'><span class='w3-tag'>from</span></span> the tower, you could see <span class='inline-examples'>far <span class='w3-tag'>into</span></span> the distance«).</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li>The transferred use can be idiomatic-metaphorical: »Sometimes you can <span class='inline-examples'>get <span class='w3-tag'>out of</span></span> rhythm.«</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-XSp</i> is a transferred use of non-spatial vocabulary (non-spatial source domain: X) to express spatial issues (spatial target domain: Sp).</li>
               `,
               `
-              
+              <li><i>T</i> stands for <i>Transferred use</i>.</li>
+              <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
+              <li>The transferred use can be idiomatic-metonymic: »I <span class='inline-examples'>went <span class='w3-tag'>on</span></span> my room.«</li>
               `
             ]
           ],
