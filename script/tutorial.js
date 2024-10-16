@@ -164,11 +164,13 @@ function addEventListener_languageSelect() {
             <p><span class="w3-tooltip w3-tag">Im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Person im Saal</span></span> Saal mit den Impressionisten blickte sie lange auf den Renoir.</p>
             <p>Sie schwebten <span class="w3-tooltip w3-tag">draußen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen außerhalb des Hauses</span></span> <span class="w3-tooltip w3-tag">oberhalb<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert die Personen oberhalb des Hauses</span></span> des <span class="w3-tooltip w3-tag">westlichen<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Teil westlich von anderen Teilen</span></span> Teils <span class="w3-tooltip w3-tag">des<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Teil im Haus</span></span> Hauses.</p>
             <p>Es ist später Abend <span class="w3-tooltip w3-tag">im<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert eine implizierte Beobachterposition im Wald</span></span> Wald <span class="w3-tooltip w3-tag">der<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert den Wald in der Stadt</span></span> Stadt.</p>
+            <p>Sie lief <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positioniert sie in der Halle</span></span> der Halle.</p>
             `,
             `
             <p>Im Saal mit den Impressionisten blickte sie lange <span class="w3-tooltip w3-tag">auf<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung des Blicks</span></span> den Renoir.</p>
             <p>Sie stieg <span class="w3-tooltip w3-tag">aus<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung zum Ausgangpunkt der Bewegung</span></span> Waggon 7 des Zuges.</p>
             <p>Sie bogen <span class="w3-tooltip w3-tag">nach<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">Richtung der Bewegung</span></span> <span class="w3-tooltip w3-tag">Süden<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">richtungsangebendes Nomen ohne Artikel</span></span> ab.</p>
+            <p>Sie lief <span class="w3-tooltip w3-tag">in<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">gibt ihre Laufrichtung an</span></span> die Halle.</p>
             `
           ],
           'annotation_categories': [
@@ -397,16 +399,24 @@ function addEventListener_languageSelect() {
             ],
             [
               `
-              
+              <li>Richtungen sind Ausdrücke, die zusammen mit einem Verb (häufig <i>Bewegungen</i>: »<span class='inline-examples'><span class='w3-tag'>zur</span></span> Stadt <i>laufen</i>«) oder als Teil von Nominalphrasen (»der <span class='inline-examples'>Nachbar <span class='w3-tag'>von</span></span> oben«) eine Richtungsangabe bilden.</li>
+              <li>Die Richtungsangabe kann in einem Satz allein für eine solche stehen, also gewissermaßen ins Leere zeigen (»sie <span class='inline-examples'>bogen <span class='w3-tag'>nach</span></span> <span class='inline-examples'><span class='w3-tag'>Süden</span></span> ab«).</li>
+              <li>Oder sie ist auf ein Ziel- oder Ausgangspunkt ausgerichtet (»<span class='inline-examples'><span class='w3-tag'>vom</span></span> <span class='inline-examples'>Turm <span class='w3-tag'>aus</span></span> konnte man <span class='inline-examples'>weit <span class='w3-tag'>in</span></span> die Ferne schauen«).</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »Manchmal kann <span class='inline-examples'>man <span class='w3-tag'>aus</span></span> dem Rhytmus geraten.«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-XR</i> ist ein übertragender Gebrauch von nicht-räumlichem Vokabular (nicht-räumlicher Quellbereich: X) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R).</li>
+              <li>Die Übertragung kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'></span></span>.«</li>
               `,
               `
-              
+              <li><i>UE</i> steht für <i>Übertragung</i>.</li>
+              <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
+              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Ich <span class='inline-examples'>ging <span class='w3-tag'>auf</span></span> mein Zimmer.«</li>
               `
             ]
           ],
@@ -450,14 +460,16 @@ function addEventListener_languageSelect() {
             <p>He thought a lot about the <span class="w3-tooltip w3-tag">sheer mass of<span class="farbe-dimensionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">indication of an amount with regard to spatial entities</span></span> ships.</p>
             `,
             `
-            <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the person in the room</span></span> the room with the Impressionists, she gazed at the Renoir for a long time.</p>
+            <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions her in the gallery</span></span> the Impressionists Gallery, she gazed at the Renoir for a long time.</p>
             <p>They were floating <span class="w3-tooltip w3-tag">outside<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons outside the house</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons above the house</span></span> the <span class="w3-tooltip w3-tag">western<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part to the west of other parts</span></span> part <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part in the house</span></span> the house.</p>
             <p>It is late evening <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions an implied observer position in the forest</span></span> the forest <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the forest in the city</span></span> the city.</p>
+            <p>She ran <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions her in the hall</span></span> the hall.</p>
             `,
             `
-            <p>In the room with the Impressionists, she gazed <span class="w3-tooltip w3-tag">at<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction of the gaze</span></span> the Renoir for a long time.</p>
+            <p>In the Impressionists Gallery, she gazed <span class="w3-tooltip w3-tag">at<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction of the gaze</span></span> the Renoir for a long time.</p>
             <p>She got <span class="w3-tooltip w3-tag">out<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction to the starting point of the movement</span></span> of carriage 7 of the train.</p>
             <p>They turned <span class="w3-tooltip w3-tag">south<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">directional noun without article</span></span>.</p>
+            <p>She ran <span class="w3-tooltip w3-tag">into<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">indicates the direction she is running in</span></span> the hall.</p>
             `
           ],
           'annotation_categories': [
