@@ -357,7 +357,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li>Ein einen Abstand angebender Ausdruck verweist direkt auf den Abstand zwischen zwei räumlichen Entitäten (»Bis zum Gipfel waren <span class='inline-examples'>es <span class='w3-tag'>250 Meter</span></span>.«).</li>
-              <li>Auch Phrasen mit oder ohne Verbalkern können eine dimensionierende Funktion haben und werden dann als Dimensionierung annotiert (»Und <span class='inline-examples'><span class='w3-tag'>kaum eine Tagreise entfernt</span></span> erblühen Universitäten.«).</li>
+              <li>Auch Phrasen mit oder ohne Verbalkern können eine dimensionierende Funktion haben und werden dann als Dimensionierung annotiert (»Und <span class='inline-examples'><span class='w3-tag'>kaum ein Dutzend Kilometer entfernt</span></span> erblühen Universitäten.«).</li>
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
@@ -394,7 +394,7 @@ function addEventListener_languageSelect() {
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
-              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Endlich kam <span class='inline-examples'>er <span class='w3-tag'>auf</span></span> seinem Zimmer an.«</li>
+              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Er <span class='inline-examples'>wartete <span class='w3-tag'>auf</span></span> seinem Zimmer.«</li>
               `
             ],
             [
@@ -415,7 +415,7 @@ function addEventListener_languageSelect() {
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
               <li><i>UE-RR</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck räumlicher Sachverhalte (räumlicher Zielbereich: R), wobei die räumlichen Konzepte sich in Quell- und Zielbereich unterscheiden oder es sich um unterschiedliche Vertreter desselben räumlichen Konzepts handelt.</li>
-              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Ich <span class='inline-examples'>ging <span class='w3-tag'>auf</span></span> mein Zimmer.«</li>
+              <li>Die Übertragung kann idiomatisch-metonymisch sein: »Hier <span class='inline-examples'>leuchten <span class='w3-tag'>aus</span></span> tiefer Dunkelheit die Bäume.«</li>
               `
             ]
           ],
@@ -463,7 +463,7 @@ function addEventListener_languageSelect() {
             <p><span class="w3-tooltip w3-tag">In<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions her in the gallery</span></span> the Impressionists Gallery, she gazed at the Renoir for a long time.</p>
             <p>They were floating <span class="w3-tooltip w3-tag">outside<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons outside the house</span></span> <span class="w3-tooltip w3-tag">above<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the persons above the house</span></span> the <span class="w3-tooltip w3-tag">western<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part to the west of other parts</span></span> part <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the part in the house</span></span> the house.</p>
             <p>It is late evening <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions an implied observer position in the forest</span></span> the forest <span class="w3-tooltip w3-tag">of<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions the forest in the city</span></span> the city.</p>
-            <p>She ran <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions her in the hall</span></span> the hall.</p>
+            <p>She was running <span class="w3-tooltip w3-tag">in<span class="farbe-positionierung w3-text w3-small w3-tag w3-round w3-animate-opacity">positions her in the hall</span></span> the hall.</p>
             `,
             `
             <p>In the Impressionists Gallery, she gazed <span class="w3-tooltip w3-tag">at<span class="farbe-richtung w3-text w3-small w3-tag w3-round w3-animate-opacity">direction of the gaze</span></span> the Renoir for a long time.</p>
@@ -651,12 +651,12 @@ function addEventListener_languageSelect() {
               `,
               `
               <li>An expression indicating the amount of spatial entities indirectly refers to the extent of the spatial entities they have taken together (»<span class='inline-examples'><span class='w3-tag'>32</span></span> wheels were still in the warehouse.«).</li>
-              <li>At least two entities must belong to the quantity, as in many cases it is not possible to differentiate between a quantity specification and class membership (»They saw a car.«, »They saw <span class='inline-examples'>two <span class='w3-tag'>cars</span></span>.«).</li>
+              <li>At least two entities must belong to the quantity, as in many cases it is not possible to differentiate between a quantity specification and class membership (»They saw a car.«, »They <span class='inline-examples'>saw <span class='w3-tag'>two</span></span> cars.«).</li>
               <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»Their way was blocked by <span class='inline-examples'>the <span class='w3-tag'>mass of</span></span> trees.«).</li>
               `,
               `
               <li>An expression specifying a distance refers directly to the distance between two spatial entities (»It <span class='inline-examples'>was <span class='w3-tag'>250 meters</span></span> to the summit.«).</l>
-              <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»And <span class='inline-examples'><span class='w3-tag'>hardly a day's journey away</span></span>, universities are blossoming.«).</li>
+              <li>Phrases with or without a verbal core can also have a dimensioning function and are then annotated as dimensioning (»And <span class='inline-examples'><span class='w3-tag'>barely a dozen kilometers away</span></span>, universities are blossoming.«).</li>
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
@@ -693,7 +693,7 @@ function addEventListener_languageSelect() {
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
               <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
-              <li>The transferred use can be idiomatic-metonymic: »Finally, he <span class='inline-examples'>arrived <span class='w3-tag'>on</span></span> his room.«</li>
+              <li>The transferred use can be idiomatic-metonymic: »He <span class='inline-examples'>waited <span class='w3-tag'>on</span></span> his room.« (Uncommon in English. In the German example, »auf« is used, which, in the context of this idiomatic phrase (»auf dem Zimmer warten«), preserves an older way of using a direction to express a positioning.)</li>
               `
             ],
             [
@@ -714,7 +714,7 @@ function addEventListener_languageSelect() {
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
               <li><i>T-SpSp</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express spatial issues (spatial target domain: Sp), where the spatial concepts differ in the source and target domains or the related entities are different representatives of the same spatial concept.</li>
-              <li>The transferred use can be idiomatic-metonymic: »I <span class='inline-examples'>went <span class='w3-tag'>on</span></span> my room.«</li>
+              <li>The transferred use can be idiomatic-metonymic: »Here the trees <span class='inline-examples'>glow <span class='w3-tag'>from</span></span> the deepest darkness.«</li>
               `
             ]
           ],
