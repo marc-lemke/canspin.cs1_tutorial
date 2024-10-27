@@ -40,6 +40,9 @@
   background-color: #cecece;
   color: #000000;
 }
+.w3-text-middle-grey-ish {
+  color: #a3a3a3
+}
 .active {
   background-color: #009688;
   cursor: default;
@@ -138,11 +141,11 @@ div[data-id="accordion-richtung-examples"] {
   padding-left: 32px;
   padding-right: 32px;
 }
-div[data-id="accordion-ort-examples"] > p > .w3-tooltip, 
-div[data-id="accordion-bewegung-examples"]  > p > .w3-tooltip, 
-div[data-id="accordion-dimensionierung-examples"]  > p > .w3-tooltip, 
-div[data-id="accordion-positionierung-examples"] > p > .w3-tooltip,
-div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
+div[data-id="accordion-ort-examples"] > p > .w3-tooltip-class-examples, 
+div[data-id="accordion-bewegung-examples"]  > p > .w3-tooltip-class-examples, 
+div[data-id="accordion-dimensionierung-examples"]  > p > .w3-tooltip-class-examples, 
+div[data-id="accordion-positionierung-examples"] > p > .w3-tooltip-class-examples,
+div[data-id="accordion-richtung-examples"] > p > .w3-tooltip-class-examples {
   cursor: help;
 }
 .annotation-class-tags {
@@ -176,12 +179,33 @@ div[data-id="accordion-richtung-examples"] > p > .w3-tooltip {
 }
 
 /* Tooltips */
-.w3-tooltip > span.w3-text {
+.w3-tooltip-class-examples, .w3-tooltip-example-text {
+  position: relative;
+}
+
+.w3-tooltip-class-examples .w3-text, .w3-tooltip-example-text .w3-text {
+  display: none;
+}
+
+.w3-tooltip-class-examples:hover .w3-text, .w3-tooltip-example-text:hover .w3-text {
+  display: inline-block;
+}
+
+.w3-tooltip-class-examples > span.w3-text {
   position: absolute;
   left: 0;
-  bottom: 28px;
+  bottom: 2.2em;
   min-width: 100px;
   border: 2px solid black;
+}
+
+.w3-tooltip-example-text > span.w3-text {
+  position: absolute;
+  left: 0;
+  bottom: 3em;
+  min-width: 100px;
+  border: 2px solid black;
+  line-height: 1.5em;
 }
 
 /* Media Queries */
