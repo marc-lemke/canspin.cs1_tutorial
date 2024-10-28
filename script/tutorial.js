@@ -268,7 +268,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
-              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X). »Räumlich« bedeutet für uns im Projekt spezifisch: annotierbar in einer der Hauptklassen einer Kategorie.</li>
               <li>Der Ausdruck oder der Kopf des Kompositums muss nach den Informationen eines Wörterbuchs (für das Deutsche: <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>) im kontemporären Gebrauch auch räumlich im Sinne eines Ortes verwendet werden, also als Bezeichnung für einen Container, ein geografisches, astronomisches oder raumstrukturelles Objekt oder Abstraktum.</li>
               <li>Die Übertragung kann kreativ-metaphorisch sein: »Sie verirrte sich in <span class='inline-examples'>ihrem <span class='w3-tag'>Gedankenpalast</span></span>.«</li>
               <li>Sie kann kreativ-metonymisch sein: »Haben sich die Leute aus Berlin schon gemeldet? - <span class='inline-examples'>Ja, <span class='w3-tag'>Berlin</span></span> hat abgesagt.«</li>
@@ -331,7 +331,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
-              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X). »Räumlich« bedeutet für uns im Projekt spezifisch: annotierbar in einer der Hauptklassen einer Kategorie.</li>
               <li>Der Ausdruck muss nach den Informationen eines Wörterbuchs (für das Deutsche: <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>) im kontemporären Gebrauch auch räumlich im Sinne einer Bewegung verwendet werden, also als Bezeichnung für die Bewegung von Subjekten, Objekten, von Licht, Schall und Geruch oder deren Wahrnehmung.</li>
               <li>Die Übertragung kann kreativ-metaphorisch sein: »Der <span class='inline-examples'>Mond <span class='w3-tag'>sang</span></span> mir das Lied meiner Kindheit.«</li>
               <li>Sie kann idiomatisch-metaphorisch sein: »Der <span class='inline-examples'>Anblick <span class='w3-tag'>brachte</span></span> mir die Situation von damals in Erinnerung.«</li>
@@ -369,7 +369,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
-              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X). »Räumlich« bedeutet für uns im Projekt spezifisch: annotierbar in einer der Hauptklassen einer Kategorie.</li>
               <li>Der Ausdruck muss nach den Informationen eines Wörterbuchs (für das Deutsche: <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>) im kontemporären Gebrauch auch räumlich im Sinne einer Dimensionierung verwendet werden, also als Ausdruck für eine räumliche Größe oder einen Abstand.</li>
               <li>Mengenangaben funktionieren im Gegensatz zu Größen- und Abstandsangaben nur räumlich mit Bezug auf eine räumliche Entität: Sie können mit der Übertragungsklasse also nicht erfasst werden.</li>
               <li>Die Übertragung kann idiomatisch-metaphorisch sein: »Das <span class='inline-examples'>waren <span class='w3-tag'>höchst</span></span> unerfreuliche Nachrichten.«</li>
@@ -395,7 +395,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
-              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X). »Räumlich« bedeutet für uns im Projekt spezifisch: annotierbar in einer der Hauptklassen einer Kategorie.</li>
               <li>Der Ausdruck muss Teil einer Übertragungsphrase sein, an der Inhaltswörter der Kategorien Ort, Bewegung oder Dimensionierung beteiligt sind.</li>
               <li>Die Übertragung kann idiomatisch-metaphorisch sein: »<span class='inline-examples'><span class='w3-tag'>an</span></span> dem silbernen Schilde der Wahrheit zerschellen«, »es nagt mancher <span class='inline-examples'>Kummer <span class='w3-tag'>am</span></span> Herzen«.</li>
               `,
@@ -420,7 +420,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>UE</i> steht für <i>Übertragung</i>.</li>
-              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X).</li>
+              <li><i>UE-RX</i> ist ein übertragender Gebrauch von räumlichem Vokabular (räumlicher Quellbereich: R) für den Ausdruck nicht-räumlicher Sachverhalte (nicht-räumlicher Zielbereich: X). »Räumlich« bedeutet für uns im Projekt spezifisch: annotierbar in einer der Hauptklassen einer Kategorie.</li>
               <li>Der Ausdruck muss Teil einer Übertragungsphrase sein, an der Inhaltswörter der Kategorien Ort, Bewegung oder Dimensionierung beteiligt sind.</li>
               <li>Die Übertragung kann idiomatisch-metaphorisch sein: »Manchmal kann <span class='inline-examples'>man <span class='w3-tag'>aus</span></span> dem Rhythmus geraten.«</li>
               `,
@@ -583,8 +583,8 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
-              <li>The expression or the head of the compound must in contemporary usage (referring to a dictionary like <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>)) also be applied spatially in the sense of a place, i.e. as a designation for a container, a geographical, astronomical or spatial object or abstractum.</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X). For us in the project, »spatial« specifically means: annotatable in one of the main classes of a category.</li>
+              <li>The expression or the head of the compound must in contemporary usage (referring to a dictionary like <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>)) also be applied spatially in the sense of a place, i.e. as a designation for a container, a geographical, astronomical or space-structual object or abstractum.</li>
               <li>The transferred use can be creative-metaphorical: »She got lost in <span class='inline-examples'>her <span class='w3-tag'>mind palace</span></span>.«</li>
               <li>It can be creative-metonymic: »Have the people from Berlin contacted you yet? - <span class='inline-examples'>Yes, <span class='w3-tag'>Berlin</span></span> has canceled the contract.«</li>
               <li>It can be idiomatic-metaphorical: »A favorable coincidence led on <span class='inline-examples'>this <span class='w3-tag'>track</span></span> to the book I was looking for.«</li>
@@ -646,7 +646,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X). For us in the project, »spatial« specifically means: annotatable in one of the main classes of a category.</li>
               <li>The expression must in contemporary usage (referring to a dictionary like <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>)) also be applied spatially in the sense of a movement, i.e. as a designation for a movement of subjects, objects, light, sound and smell or their perception.</li>
               <li>The transferred use can be creative-metaphorical: »The <span class='inline-examples'>moon <span class='w3-tag'>sang</span></span> me the song of my childhood.«</li>
               <li>It can be idiomatic-metaphorical: »The <span class='inline-examples'>sight <span class='w3-tag'>brought back</span></span> memories of the situation at the time.«</li>
@@ -684,7 +684,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X). For us in the project, »spatial« specifically means: annotatable in one of the main classes of a category.</li>
               <li>The expression must in contemporary usage (referring to a dictionary like <a href='https://www.dwds.de/wb' target='_blank'>DWDS</a>)) also be applied spatially in the sense of a dimensioning, i.e. as a designation for size or extend of spatial entities or distances.</li>
               <li>Quantity specifications, in contrast to size and distance specifications, only work spatially with reference to a spatial entity: they cannot be annotated with the transferred usage class.</li>
               <li>The transferred use can be idiomatic-metaphorical: »That <span class='inline-examples'>was <span class='w3-tag'>highly</span></span> unpleasant news.«</li>
@@ -710,7 +710,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X). For us in the project, »spatial« specifically means: annotatable in one of the main classes of a category.</li>
               <li>The expression must be part of a transferred usage phrase involving content words of the categories place, movement or dimensioning.</li>
               <li>The transferred use can be idiomatic-metaphorical: »<span class='inline-examples'>shatter <span class='w3-tag'>on</span></span> the silver shield of truth«, »some sorrow <span class='inline-examples'>gnaws <span class='w3-tag'>at</span></span> the heart«.</li>
               `,
@@ -735,7 +735,7 @@ function addEventListener_languageSelect() {
               `,
               `
               <li><i>T</i> stands for <i>Transferred use</i>.</li>
-              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X).</li>
+              <li><i>T-SpX</i> is a transferred use of spatial vocabulary (spatial source domain: Sp) to express non-spatial issues (non-spatial target domain: X). For us in the project, »spatial« specifically means: annotatable in one of the main classes of a category.</li>
               <li>The expression must be part of a transferred usage phrase involving content words of the categories place, movement or dimensioning.</li>
               <li>The transferred use can be idiomatic-metaphorical: »Sometimes you can <span class='inline-examples'>get <span class='w3-tag'>out of</span></span> rhythm.«</li>
               `,
