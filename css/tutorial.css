@@ -208,6 +208,10 @@ div[data-id="accordion-richtung-examples"] > p > .w3-tooltip-class-examples {
   line-height: 1.5em;
 }
 
+.w3-tooltip-example-text {
+  white-space: nowrap;
+}
+
 /* Media Queries */
 /* hint: most Media Queries are controlled via JS, see script/tutorial.js */
 @media (max-width: 500px) {
