@@ -991,6 +991,11 @@ function addEventListener_insertValuesOnLoad() {
 
     // set content in language
     setContentInLanguage(startLanguageCode);
+
+    // set language selector button according to startLanguageCode setting
+    const languageButtonsList = [...document.querySelectorAll('#languageSelector > div > button')];
+    languageButtonsList.forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`#${startLanguageCode}`).classList.add('active');
   });
 }
 
