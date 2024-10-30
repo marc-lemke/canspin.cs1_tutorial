@@ -327,7 +327,7 @@ const languageDict = {
       ],
       [
         `
-        <li>Richtungen sind Ausdrücke, die zusammen mit einem Verb (häufig <i>Bewegungen</i>: »<span class='inline-examples'><span class='w3-tag'>zur</span></span> Stadt <i>laufen</i>«) oder als Teil von Nominalphrasen (»der <span class='inline-examples'>Nachbar <span class='w3-tag'>von</span></span> oben«) eine Richtungsangabe bilden.</li>
+        <li>Richtungen sind Ausdrücke, die zusammen mit einem Verb (häufig <i>Bewegungen</i>: »<span class='inline-examples'><span class='w3-tag'>zur</span></span> Stadt <b>laufen</b>«) oder als Teil von Nominalphrasen (»der <span class='inline-examples'>Nachbar <span class='w3-tag'>von</span></span> oben«) eine Richtungsangabe bilden.</li>
         <li>Die Richtungsangabe kann in einem Satz allein für eine solche stehen, also gewissermaßen ins Leere zeigen (»sie <span class='inline-examples'>bogen <span class='w3-tag'>nach</span></span> <span class='inline-examples'><span class='w3-tag'>Süden</span></span> ab«).</li>
         <li>Oder sie ist auf ein Ziel- oder Ausgangspunkt ausgerichtet (»<span class='inline-examples'><span class='w3-tag'>vom</span></span> <span class='inline-examples'>Turm <span class='w3-tag'>aus</span></span> konnte man <span class='inline-examples'>weit <span class='w3-tag'>in</span></span> die Ferne schauen«).</li>
         `,
@@ -656,7 +656,7 @@ const languageDict = {
       ],
       [
         `
-        <li>Positionings express the spatial relation between two spatial entities (»he was <span class='inline-examples'>in <span class='w3-tag'>the</span></span> courtyard«, »they were <span class='inline-examples'>floating <span class='w3-tag'>outside</span></span> <span class='inline-examples'><span class='w3-tag'>above</span></span> the house«).</li>
+        <li>Positionings express the spatial relation between two spatial entities (»he <span class='inline-examples'>was <span class='w3-tag'>in</span></span> the courtyard«, »they were <span class='inline-examples'>floating <span class='w3-tag'>outside</span></span> <span class='inline-examples'><span class='w3-tag'>above</span></span> the house«).</li>
         <li>One of the entities can remain implicit (»<span class='inline-examples'>the <span class='w3-tag'>left</span></span> room« positions the room to the left of an implicit right room; in »It was late <span class='inline-examples'>evening <span class='w3-tag'>in </span></span> the forest« an implicit observer position is placed in the city forest).</li>
         <li>Partial-whole relationships are also considered to be positionings if both constituents of the relationship are places (»this is the largest <span class='inline-examples'>forest <span class='w3-tag'>of our</span></span> city«).</li>
         `,
@@ -689,7 +689,7 @@ const languageDict = {
       ],
       [
         `
-        <li>Directions are expressions that form a directional statement together with a verb (mostly <i>movements</i>: »<span class='inline-examples'><i>walk</i> <span class='w3-tag'>into</span></span> the city«) or as part of a noun phrase (»the <span class='inline-examples'>neighbor <span class='w3-tag'>from</span></span> upstairs«).</li>
+        <li>Directions are expressions that form a directional statement together with a verb (mostly <i>movements</i>: »<span class='inline-examples'><b>walk</b> <span class='w3-tag'>into</span></span> the city«) or as part of a noun phrase (»the <span class='inline-examples'>neighbor <span class='w3-tag'>from</span></span> upstairs«).</li>
         <li>The directional information can stand alone in a sentence for one, so to speak, pointing into the void (»they <span class='inline-examples'>turned <span class='w3-tag'>south</span></span>«).</li>
         <li>Or it is oriented towards a destination point or a starting point (»<span class='inline-examples'><span class='w3-tag'>from</span></span> the tower, you could see <span class='inline-examples'>far <span class='w3-tag'>into</span></span> the distance«).</li>
         `,
